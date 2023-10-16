@@ -6,11 +6,13 @@ if (wifiChanged()) {
     ? 'direct'
     : 'rule';
   $surge.setOutboundMode(mode);
+  /*
   $notification.post(
     'Surge',
     `Wi-Fi changed to ${$network.wifi.ssid || 'cellular'}`,
     `use ${mode} mode`
   );
+  */
 }
 
 function wifiChanged() {
