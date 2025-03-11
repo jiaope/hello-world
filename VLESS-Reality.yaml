@@ -1,5 +1,5 @@
 proxies:
-  - name: "VLESS-Reality"
+  - name: VLESS-Reality
     type: vless
     server:  144.34.237.158
     port: 443
