@@ -141,6 +141,7 @@ rules:
   - DOMAIN-SUFFIX,routinehub.co,VLESS-Reality
   - DOMAIN-SUFFIX,v2ex.com,VLESS-Reality
   - DOMAIN-SUFFIX,api.day.app,DIRECT
+  - DOMAIN-SUFFIX,sourceforge.net,DIRECT
   - IP-CIDR,103.133.176.77/32,VLESS-Reality
   - GEOIP,CN,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
