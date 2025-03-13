@@ -143,14 +143,14 @@ rules:
   - DOMAIN-SUFFIX,api.day.app,DIRECT
   - DOMAIN-SUFFIX,sourceforge.net,DIRECT
   - IP-CIDR,103.133.176.77/32,VLESS-Reality
-  - DOMAIN-SUFFIX,qbittorrent.org,self-us158
-  - DOMAIN-SUFFIX,daliansky.net,self-us158
+  - DOMAIN-SUFFIX,qbittorrent.org,VLESS-Reality
+  - DOMAIN-SUFFIX,daliansky.net,VLESS-Reality
 # ExHentai
-  - DOMAIN-SUFFIX,ehgt.org,self-us158
-  - DOMAIN-SUFFIX,e-hentai.org,self-us158
-  - DOMAIN-SUFFIX,exhentai.org,self-us158
-  - DOMAIN-SUFFIX,ehwiki.org,self-us158
-  - DOMAIN-SUFFIX,hentaiverse.org,self-us158
+  - DOMAIN-SUFFIX,ehgt.org,VLESS-Reality
+  - DOMAIN-SUFFIX,e-hentai.org,VLESS-Reality
+  - DOMAIN-SUFFIX,exhentai.org,VLESS-Reality
+  - DOMAIN-SUFFIX,ehwiki.org,VLESS-Reality
+  - DOMAIN-SUFFIX,hentaiverse.org,VLESS-Reality
 # sinaimg.cn是微博漏网之鱼
   - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
 # 极验GEETEST
