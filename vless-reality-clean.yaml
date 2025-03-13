@@ -117,7 +117,7 @@ rule-providers:
 proxies:
   - name: VLESS-Reality
     type: vless
-    server:  144.34.237.158
+    server: 144.34.237.158
     port: 443
     uuid: 14ef7c56-2cb0-43d4-9f9f-0b201d245a3c
     tls: true
