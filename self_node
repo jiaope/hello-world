@@ -1,5 +1,5 @@
 proxies:
-  - name: us158
+  - name: self-us158
     type: vless
     server:  144.34.237.158
     port: 443
