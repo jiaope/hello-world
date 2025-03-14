@@ -138,6 +138,7 @@ proxy-groups:
       - VLESS-Reality
 rules:
   - DOMAIN-SUFFIX,libtorrent.org,DIRECT
+  - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
   - DOMAIN-SUFFIX,hanime1.me,VLESS-Reality
   - DOMAIN-SUFFIX,routinehub.co,VLESS-Reality
   - DOMAIN-SUFFIX,v2ex.com,VLESS-Reality
