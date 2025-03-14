@@ -204,6 +204,7 @@ rules:
   - DOMAIN-SUFFIX,acer.com.tw,Acer
   - DOMAIN-SUFFIX,anydesk.com,Acer
   - DOMAIN-SUFFIX,libtorrent.org,DIRECT
+  - DOMAIN-SUFFIX,*.pool.ntp.org,DIRECT
   - DOMAIN-SUFFIX,fast.com,SpeedTest
   - DOMAIN-SUFFIX,ooklaserver.net,SpeedTest
   - DOMAIN-SUFFIX,speed.cloudflare.com,SpeedTest
