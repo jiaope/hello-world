@@ -29,6 +29,7 @@ dns:
     - time1.cloud.tencent.com
     - time.ustc.edu.cn
     - pool.ntp.org
+    - "*.pool.ntp.org"
     - ntp.ubuntu.com
     - ntp.aliyun.com
     - ntp1.aliyun.com
