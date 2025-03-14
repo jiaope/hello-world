@@ -1,0 +1,227 @@
+mixed-port: 12345
+allow-lan: true
+mode: Rule
+log-level: info
+ipv6: false
+cfw-latency-timeout: 5000
+cfw-latency-url: http://www.google.com/generate_204
+clash-for-android:
+  append-system-dns: false
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:8853
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - time1.cloud.tencent.com
+    - time.ustc.edu.cn
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time1.aliyun.com
+    - time2.aliyun.com
+    - time3.aliyun.com
+    - time4.aliyun.com
+    - time5.aliyun.com
+    - time6.aliyun.com
+    - time7.aliyun.com
+    - "*.time.edu.cn"
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  nameserver:
+    - https://223.6.6.6/dns-query
+    - https://rubyfish.cn/dns-query
+    - https://dns.pub/dns-query
+  fallback:
+    - https://dns.rubyfish.cn/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - tls://8.8.4.4
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
+rule-providers:
+proxies:
+  - {name: iPhone13PM, server: 172.16.80.24, port: 10214, type: socks5, udp: true}
+  - {name: 🇭🇰 Hong Kong 08, server: q9ohocwbd.nmmis.com, port: 15024, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇸🇬 Singapore 04, server: q9ohocwbd.nmmis.com, port: 18811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇯🇵 Japan 04, server: waj367fcn.nmmis.com, port: 17007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇺🇸 United States 03, server: waj367fcn.nmmis.com, port: 16004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇨🇳 Taiwan 03, server: q9ohocwbd.nmmis.com, port: 19001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇩🇪 Germany 03, server: q9ohocwbd.nmmis.com, port: 21004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇬🇧 United Kingdom 01, server: q9ohocwbd.nmmis.com, port: 22004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+proxy-groups:
+  - name: HK
+    type: select
+    proxies:
+      - 🇭🇰 Hong Kong 08
+  - name: US
+    type: select
+    proxies:
+      - 🇺🇸 United States 03
+  - name: JP
+    type: select
+    proxies:
+      - 🇯🇵 Japan 04
+  - name: TW
+    type: select
+    proxies:
+      - 🇨🇳 Taiwan 03
+  - name: SG
+    type: select
+    proxies:
+      - 🇸🇬 Singapore 04
+  - name: DE
+    type: select
+    proxies:
+      - 🇩🇪 Germany 03
+  - name: GB
+    type: select
+    proxies:
+      - 🇬🇧 United Kingdom 01
+  - name: Acer
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+      - DE
+      - GB
+  - name: SpeedTest
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+      - DE
+      - GB
+  - name: IPInfo
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+      - DE
+      - GB
+  - name: Final
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+      - DE
+      - GB
+rules:
+  - DOMAIN-SUFFIX,ipinfo.io,IPInfo
+  - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
+  - DOMAIN-SUFFIX,acervcon.com,Acer
+  - DOMAIN-SUFFIX,amazonaws.com,Acer
+  - DOMAIN-SUFFIX,acer.com.tw,Acer
+  - DOMAIN-SUFFIX,anydesk.com,Acer
+  - DOMAIN-SUFFIX,libtorrent.org,DIRECT
+  - DOMAIN-SUFFIX,fast.com,SpeedTest
+  - DOMAIN-SUFFIX,ooklaserver.net,SpeedTest
+  - DOMAIN-SUFFIX,speed.cloudflare.com,SpeedTest
+  - DOMAIN-SUFFIX,speed.dler.io,SpeedTest
+  - DOMAIN-KEYWORD,speedtest,SpeedTest
+  - DOMAIN-SUFFIX,routinehub.co,US
+  - DOMAIN-SUFFIX,v2ex.com,HK
+  - DOMAIN-SUFFIX,api.day.app,DIRECT
+  - IP-CIDR,103.133.176.77/32,HK
+  - DOMAIN-SUFFIX,qbittorrent.org,US
+  - DOMAIN-SUFFIX,daliansky.net,HK
+  - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+  - GEOIP,CN,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - MATCH,Final
