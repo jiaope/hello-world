@@ -198,7 +198,6 @@ proxy-groups:
       - GB
 rules:
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
-  - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
   - DOMAIN-SUFFIX,acervcon.com,Acer
   - DOMAIN-SUFFIX,amazonaws.com,Acer
   - DOMAIN-SUFFIX,acer.com.tw,Acer
