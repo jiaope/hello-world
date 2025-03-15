@@ -124,6 +124,7 @@ proxies:
   - {name: 🇨🇳 Taiwan 03, server: q9ohocwbd.nmmis.com, port: 19001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇩🇪 Germany 03, server: q9ohocwbd.nmmis.com, port: 21004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇬🇧 United Kingdom 01, server: q9ohocwbd.nmmis.com, port: 22004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
 proxy-groups:
   - name: HK
     type: select
@@ -164,6 +165,7 @@ proxy-groups:
       - SG
       - DE
       - GB
+      - 俄罗斯CN2-rl
   - name: SpeedTest
     type: select
     proxies:
@@ -175,6 +177,7 @@ proxy-groups:
       - SG
       - DE
       - GB
+      - 俄罗斯CN2-rl
   - name: IPInfo
     type: select
     proxies:
@@ -186,6 +189,7 @@ proxy-groups:
       - SG
       - DE
       - GB
+      - 俄罗斯CN2-rl
   - name: Final
     type: select
     proxies:
@@ -197,6 +201,7 @@ proxy-groups:
       - SG
       - DE
       - GB
+      - 俄罗斯CN2-rl
 rules:
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
   - DOMAIN-SUFFIX,acervcon.com,Acer
