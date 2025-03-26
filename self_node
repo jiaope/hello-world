@@ -13,3 +13,17 @@ proxies:
     reality-opts:
       public-key: lB2sqYU1MIPXVJUuja9biHrtdIIX7KdUS17hIQnykWc
       short-id: 16e1e76aabf7adb4
+  - name: us158-sixtynet
+    type: vless
+    server:  144.34.237.158
+    port: 443
+    uuid: eddd6eb2-582e-4a41-84dc-9dc0bfa0d987
+    tls: true
+    udp: true
+    servername: wysk.top
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0Qd8jhtxMZpmM9MXQjXhh6Qoeyvd2y60DVg01H4aS1I
+      short-id: d45fa2e5f9644e81
