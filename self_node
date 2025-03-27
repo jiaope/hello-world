@@ -32,5 +32,5 @@ proxies:
     server: 42.2.143.104
     port: 32811
     cipher: 2022-blake3-aes-128-gcm
-    password: "ZeZoEhyFbRs2wKVHeffeLw==:nX3RTzWxCTnsDiyRUvV5uA=="
+    password: "ZeZoEhyFbRs2wKVHeffeLw=="
     udp: true
