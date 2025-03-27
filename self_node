@@ -27,3 +27,10 @@ proxies:
     reality-opts:
       public-key: 0Qd8jhtxMZpmM9MXQjXhh6Qoeyvd2y60DVg01H4aS1I
       short-id: d45fa2e5f9644e81
+  - name: HKT-Nano
+    type: ss
+    server: 42.2.143.104
+    port: 32811
+    cipher: 2022-blake3-aes-128-gcm
+    password: "ZeZoEhyFbRs2wKVHeffeLw==:nX3RTzWxCTnsDiyRUvV5uA=="
+    udp: true
