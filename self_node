@@ -69,3 +69,12 @@ proxies:
     reality-opts:
       public-key: 8n5WXHWK61pKjeTfj_DHnUiF3hpC7theNZNMm-BbpgI
       short-id: 68f3e3c532
+  - name: HiNet02
+    type: ss
+    server: hinet.pai3.uk
+    port: 17699
+    cipher: 2022-blake3-aes-128-gcm
+    password: "Y8OJw7HCs8OKfsKNLmBQw5RmB8Kfwr9YImbCpmcNw6HDi0jCuEZYRGDDmcKqwoA"
+    udp: true
+    udp-over-tcp: true
+    udp-over-tcp-version: 2
