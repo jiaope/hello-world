@@ -29,7 +29,7 @@ proxies:
       short-id: d45fa2e5f9644e81
   - name: HKT-Nano
     type: ss
-    server: 42.2.143.104
+    server: 169278.xyz
     port: 32811
     cipher: 2022-blake3-aes-128-gcm
     password: "ZeZoEhyFbRs2wKVHeffeLw=="
