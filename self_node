@@ -29,7 +29,7 @@ proxies:
       short-id: ""
   - name: LA03
     type: ss
-    server: la03.169278.xyz
+    server: la02.169278.xyz
     port: 51218
     cipher: 2022-blake3-aes-128-gcm
     password: "RVQG1Pho93O1eiV1V+KwHg=="
