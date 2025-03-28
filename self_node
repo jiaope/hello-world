@@ -29,7 +29,7 @@ proxies:
       short-id: d45fa2e5f9644e81
   - name: HKT01
     type: ss
-    server: hkt.169278.xyz
+    server: hkt01.169278.xyz
     port: 32811
     cipher: 2022-blake3-aes-128-gcm
     password: "ZeZoEhyFbRs2wKVHeffeLw=="
