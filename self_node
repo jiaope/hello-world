@@ -53,5 +53,5 @@ proxies:
     skip-cert-verify: true
     client-fingerprint: chrome
     reality-opts:
-      public-key: 
+      public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo
       short-id: 
