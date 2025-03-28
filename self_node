@@ -34,3 +34,11 @@ proxies:
     cipher: 2022-blake3-aes-128-gcm
     password: "ZeZoEhyFbRs2wKVHeffeLw=="
     udp: true
+  - name: HK06
+    type: ss
+    server: q9ohocwbd.nmmis.com
+    port: 15014
+    cipher: 2022-blake3-aes-128-gcm
+    password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==
+    udp: true
+    dialer-proxy: HKT-Group
