@@ -55,3 +55,17 @@ proxies:
     reality-opts:
       public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo
       short-id: e6ef20d45d410596
+  - name: HiNet01
+    type: vless
+    server: hinet.pai3.uk
+    port: 39113
+    uuid: afce9e12-07a0-4aa1-87f6-4715555e21a2
+    tls: true
+    udp: true
+    servername: yahoo.com
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8n5WXHWK61pKjeTfj_DHnUiF3hpC7theNZNMm-BbpgI
+      short-id: 68f3e3c532
