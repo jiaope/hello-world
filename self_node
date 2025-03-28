@@ -27,18 +27,3 @@ proxies:
     reality-opts:
       public-key: 0Qd8jhtxMZpmM9MXQjXhh6Qoeyvd2y60DVg01H4aS1I
       short-id: d45fa2e5f9644e81
-  - name: HKT01
-    type: ss
-    server: hkt01.169278.xyz
-    port: 32811
-    cipher: 2022-blake3-aes-128-gcm
-    password: "ZeZoEhyFbRs2wKVHeffeLw=="
-    udp: true
-  - name: HK06
-    type: ss
-    server: q9ohocwbd.nmmis.com
-    port: 15014
-    cipher: 2022-blake3-aes-128-gcm
-    password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==
-    udp: true
-    dialer-proxy: HKT-Group
