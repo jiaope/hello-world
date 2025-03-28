@@ -62,7 +62,7 @@ proxies:
   - name: HKT01
     type: ss
     server: hkt01.169278.xyz
-    port: 34815
+    port: 32811
     cipher: 2022-blake3-aes-128-gcm
     password: "ZeZoEhyFbRs2wKVHeffeLw=="
     udp: true
