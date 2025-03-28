@@ -31,7 +31,7 @@ proxies:
     type: vless
     server: la01.169278.xyz
     port: 443
-    uuid: 
+    uuid: fcddff59-ed46-4892-b5cb-60e69eb23417
     tls: true
     udp: true
     servername: 168000.xyz
