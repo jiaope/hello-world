@@ -13,48 +13,29 @@ proxies:
     reality-opts:
       public-key: lB2sqYU1MIPXVJUuja9biHrtdIIX7KdUS17hIQnykWc
       short-id: 16e1e76aabf7adb4
-  - name: LA01-LA02
+  - name: LA02
     type: vless
-    server: la01.169278.xyz
-    port: 443
-    uuid: eddd6eb2-582e-4a41-84dc-9dc0bfa0d987
+    server: 204.235.240.49
+    port: 30012
+    uuid: aaa7d5b9-a6b8-4cdf-adf1-0977ea4340b4
     tls: true
     udp: true
-    servername: 168000.xyz
+    servername: aws.amazon.com
     flow: xtls-rprx-vision
     skip-cert-verify: true
     client-fingerprint: chrome
     reality-opts:
-      public-key: 0Qd8jhtxMZpmM9MXQjXhh6Qoeyvd2y60DVg01H4aS1I
-      short-id: d45fa2e5f9644e81
-  - name: LA01-HKT01
-    type: vless
-    server: la01.169278.xyz
-    port: 443
-    uuid: fcddff59-ed46-4892-b5cb-60e69eb23417
-    tls: true
+      public-key: Z9wfNTnMfXZT_XL9NUjmFakkFFN3atWIA8rzJJ2NlFY
+      short-id: ""
+  - name: LA03
+    type: ss
+    server: la03.169278.xyz
+    port: 51218
+    cipher: 2022-blake3-aes-128-gcm
+    password: "RVQG1Pho93O1eiV1V+KwHg=="
     udp: true
-    servername: 168000.xyz
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: xVSPMTRO82AXe1TahxlBVcnblqH_xz8wH1fJFzpkTwk
-      short-id: 8cc6ef0bf761640d
-  - name: LA01-LA03
-    type: vless
-    server: la01.169278.xyz
-    port: 443
-    uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803
-    tls: true
-    udp: true
-    servername: 168000.xyz
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo
-      short-id: e6ef20d45d410596
+    udp-over-tcp: true
+    udp-over-tcp-version: 2
   - name: HiNet01
     type: vless
     server: hinet.pai3.uk
@@ -87,4 +68,50 @@ proxies:
     udp: true
     udp-over-tcp: true
     udp-over-tcp-version: 2
+  - name: LA01-LA02
+    type: vless
+    server: la01.169278.xyz
+    port: 443
+    uuid: eddd6eb2-582e-4a41-84dc-9dc0bfa0d987
+    tls: true
+    udp: true
+    servername: 168000.xyz
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0Qd8jhtxMZpmM9MXQjXhh6Qoeyvd2y60DVg01H4aS1I
+      short-id: d45fa2e5f9644e81
+  - name: LA01-LA03
+    type: vless
+    server: la01.169278.xyz
+    port: 443
+    uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803
+    tls: true
+    udp: true
+    servername: 168000.xyz
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo
+      short-id: e6ef20d45d410596
+  - name: LA01-HKT01
+    type: vless
+    server: la01.169278.xyz
+    port: 443
+    uuid: fcddff59-ed46-4892-b5cb-60e69eb23417
+    tls: true
+    udp: true
+    servername: 168000.xyz
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: xVSPMTRO82AXe1TahxlBVcnblqH_xz8wH1fJFzpkTwk
+      short-id: 8cc6ef0bf761640d
+
+
+
+
 
