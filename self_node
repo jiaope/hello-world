@@ -55,7 +55,7 @@ proxies:
     server: hinet.pai3.uk
     port: 17699
     cipher: 2022-blake3-aes-128-gcm
-    password: "Y8OJw7HCs8OKfsKNLmBQw5RmB8Kfwr9YImbCpmcNw6HDi0jCuEZYRGDDmcKqwoA="
+    password: "ZU8OqQxBio6n/5PY43wDRw=="
     udp: true
     udp-over-tcp: true
     udp-over-tcp-version: 2
