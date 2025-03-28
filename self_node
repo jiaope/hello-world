@@ -41,7 +41,7 @@ proxies:
     reality-opts:
       public-key: xVSPMTRO82AXe1TahxlBVcnblqH_xz8wH1fJFzpkTwk
       short-id: 8cc6ef0bf761640d
-  - name: LA01-LA02
+  - name: LA01-LA03
     type: vless
     server: la01.169278.xyz
     port: 443
