@@ -48,7 +48,7 @@ proxies:
     uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee
     tls: true
     udp: true
-    servername: 2akribis.com
+    servername: addons.mozilla.org
     flow: xtls-rprx-vision
     skip-cert-verify: false
     client-fingerprint: chrome
