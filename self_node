@@ -80,7 +80,7 @@ proxies:
     skip-cert-verify: true
     client-fingerprint: chrome
     reality-opts:
-      public-key: 
+      public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY
       short-id: 
   - name: LA01-LA02
     type: vless
