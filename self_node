@@ -75,13 +75,13 @@ proxies:
     uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee
     tls: true
     udp: true
-    servername: 
+    servername: yahoo.com
     flow: xtls-rprx-vision
     skip-cert-verify: true
     client-fingerprint: chrome
     reality-opts:
       public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY
-      short-id: 
+      short-id: 0027a7a4f00365c5
   - name: LA01-LA02
     type: vless
     server: la01.169278.xyz
