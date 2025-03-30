@@ -50,7 +50,7 @@ proxies:
     udp: true
     servername: 2akribis.com
     flow: xtls-rprx-vision
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     reality-opts:
       public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY
