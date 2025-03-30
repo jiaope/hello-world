@@ -70,9 +70,9 @@ proxies:
       public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo
       short-id: e6ef20d45d410596
   - name: HK01-HiNet01
-    type: 22451
+    type: vless
     server: hk01.169278.xyz
-    port: 443
+    port: 22451
     uuid: 9824a042-780f-4575-a8b8-60a7fdb34093
     tls: true
     udp: true
