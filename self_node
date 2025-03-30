@@ -73,7 +73,7 @@ proxies:
     type: vless
     server: hk01.169278.xyz
     port: 443
-    uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee
+    uuid: 9824a042-780f-4575-a8b8-60a7fdb34093
     tls: true
     udp: true
     servername: 2akribis.com
@@ -81,8 +81,8 @@ proxies:
     skip-cert-verify: true
     client-fingerprint: chrome
     reality-opts:
-      public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY
-      short-id: 0027a7a4f00365c5
+      public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM
+      short-id: a4af0bce7a176894
   - name: HK01-HKT01
     type: vless
     server: hk01.169278.xyz
