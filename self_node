@@ -68,6 +68,20 @@ proxies:
     udp: true
     udp-over-tcp: true
     udp-over-tcp-version: 2
+  - name: HK01
+    type: vless
+    server: hk01.169278.xyz
+    port: 443
+    uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee
+    tls: true
+    udp: true
+    servername: 
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 
+      short-id: 
   - name: LA01-LA02
     type: vless
     server: la01.169278.xyz
