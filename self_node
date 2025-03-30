@@ -48,7 +48,7 @@ proxies:
     uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee
     tls: true
     udp: true
-    servername: addons.mozilla.org
+    servername: 2akribis.com
     flow: xtls-rprx-vision
     skip-cert-verify: false
     client-fingerprint: chrome
@@ -70,7 +70,7 @@ proxies:
       public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo
       short-id: e6ef20d45d410596
   - name: HK01-HiNet01
-    type: vless
+    type: 22451
     server: hk01.169278.xyz
     port: 443
     uuid: 9824a042-780f-4575-a8b8-60a7fdb34093
@@ -86,7 +86,7 @@ proxies:
   - name: HK01-HKT01
     type: vless
     server: hk01.169278.xyz
-    port: 443
+    port: 22605
     uuid: 31d6ade0-7bfb-4329-a499-727ddc43830c
     tls: true
     udp: true
