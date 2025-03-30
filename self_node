@@ -27,15 +27,6 @@ proxies:
     reality-opts:
       public-key: Z9wfNTnMfXZT_XL9NUjmFakkFFN3atWIA8rzJJ2NlFY
       short-id: ""
-  - name: LA03
-    type: ss
-    server: la02.169278.xyz
-    port: 51218
-    cipher: 2022-blake3-aes-128-gcm
-    password: "RVQG1Pho93O1eiV1V+KwHg=="
-    udp: true
-    udp-over-tcp: true
-    udp-over-tcp-version: 2
   - name: HiNet01
     type: vless
     server: hinet.pai3.uk
@@ -50,24 +41,6 @@ proxies:
     reality-opts:
       public-key: 8n5WXHWK61pKjeTfj_DHnUiF3hpC7theNZNMm-BbpgI
       short-id: 68f3e3c532
-  - name: HiNet02
-    type: ss
-    server: hinet.pai3.uk
-    port: 17699
-    cipher: 2022-blake3-aes-128-gcm
-    password: "ZU8OqQxBio6n/5PY43wDRw==:QxSosMYlgM0rOznNlA/cTw=="
-    udp: true
-    udp-over-tcp: true
-    udp-over-tcp-version: 2
-  - name: HKT01
-    type: ss
-    server: hkt01.169278.xyz
-    port: 32811
-    cipher: 2022-blake3-aes-128-gcm
-    password: "ZeZoEhyFbRs2wKVHeffeLw=="
-    udp: true
-    udp-over-tcp: true
-    udp-over-tcp-version: 2
   - name: HK01
     type: vless
     server: hk01.169278.xyz
@@ -82,20 +55,6 @@ proxies:
     reality-opts:
       public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY
       short-id: 0027a7a4f00365c5
-  - name: LA01-LA02
-    type: vless
-    server: la01.169278.xyz
-    port: 443
-    uuid: eddd6eb2-582e-4a41-84dc-9dc0bfa0d987
-    tls: true
-    udp: true
-    servername: 168000.xyz
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 0Qd8jhtxMZpmM9MXQjXhh6Qoeyvd2y60DVg01H4aS1I
-      short-id: d45fa2e5f9644e81
   - name: LA01-LA03
     type: vless
     server: la01.169278.xyz
@@ -110,20 +69,34 @@ proxies:
     reality-opts:
       public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo
       short-id: e6ef20d45d410596
-  - name: LA01-HKT01
+  - name: HK01-HiNet01
     type: vless
-    server: la01.169278.xyz
+    server: hk01.169278.xyz
     port: 443
-    uuid: fcddff59-ed46-4892-b5cb-60e69eb23417
+    uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee
     tls: true
     udp: true
-    servername: 168000.xyz
+    servername: 2akribis.com
     flow: xtls-rprx-vision
     skip-cert-verify: true
     client-fingerprint: chrome
     reality-opts:
-      public-key: xVSPMTRO82AXe1TahxlBVcnblqH_xz8wH1fJFzpkTwk
-      short-id: 8cc6ef0bf761640d
+      public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY
+      short-id: 0027a7a4f00365c5
+  - name: HK01-HKT01
+    type: vless
+    server: hk01.169278.xyz
+    port: 443
+    uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee
+    tls: true
+    udp: true
+    servername: 2akribis.com
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY
+      short-id: 0027a7a4f00365c5
 
 
 
