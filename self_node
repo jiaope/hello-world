@@ -43,7 +43,7 @@ proxies:
     uuid: afce9e12-07a0-4aa1-87f6-4715555e21a2
     tls: true
     udp: true
-    servername: yahoo.com
+    servername: addons.mozilla.org
     flow: xtls-rprx-vision
     skip-cert-verify: true
     client-fingerprint: chrome
