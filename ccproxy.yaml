@@ -124,6 +124,8 @@ proxies:
   - {name: 🇨🇳 Taiwan 03, server: q9ohocwbd.nmmis.com, port: 19001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇩🇪 Germany 03, server: q9ohocwbd.nmmis.com, port: 21004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇬🇧 United Kingdom 01, server: q9ohocwbd.nmmis.com, port: 22004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: LA01-LA03, type: vless, server: la01.169278.xyz, port: 25449, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, udp: true, servername: 168000.xyz, flow: xtls-rprx-vision, skip-cert-verify: true, client-fingerprint: chrome, reality-opts: { public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: e6ef20d45d410596} }
+  - {name: LA01-HiNet01, type: vless, server: la01.169278.xyz, port: 45715, uuid: ec5a3365-893d-4aae-87eb-f1f7fa4fc96e, tls: true, udp: true, servername: 168000.xyz, flow: xtls-rprx-vision, skip-cert-verify: true, client-fingerprint: chrome, reality-opts:{ public-key: ZXztrqKcymvBj72GV0W26JD2iZfV97aUQoxuxo83UFA, short-id: ced8ef522c71cf80} }
   - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
 proxy-groups:
   - name: HK
@@ -165,6 +167,8 @@ proxy-groups:
       - SG
       - DE
       - GB
+      - LA01-LA03
+      - LA01-HiNet01
       - 俄罗斯CN2-rl
   - name: SpeedTest
     type: select
@@ -177,6 +181,8 @@ proxy-groups:
       - SG
       - DE
       - GB
+      - LA01-LA03
+      - LA01-HiNet01
       - 俄罗斯CN2-rl
   - name: IPInfo
     type: select
@@ -189,6 +195,8 @@ proxy-groups:
       - SG
       - DE
       - GB
+      - LA01-LA03
+      - LA01-HiNet01
       - 俄罗斯CN2-rl
   - name: Final
     type: select
@@ -201,6 +209,8 @@ proxy-groups:
       - SG
       - DE
       - GB
+      - LA01-LA03
+      - LA01-HiNet01
       - 俄罗斯CN2-rl
 rules:
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
@@ -215,12 +225,12 @@ rules:
   - DOMAIN-SUFFIX,speed.cloudflare.com,SpeedTest
   - DOMAIN-SUFFIX,speed.dler.io,SpeedTest
   - DOMAIN-KEYWORD,speedtest,SpeedTest
-  - DOMAIN-SUFFIX,routinehub.co,US
-  - DOMAIN-SUFFIX,v2ex.com,HK
+  - DOMAIN-SUFFIX,routinehub.co,LA01-LA03
+  - DOMAIN-SUFFIX,v2ex.com,LA01-LA03
   - DOMAIN-SUFFIX,api.day.app,DIRECT
-  - IP-CIDR,103.133.176.77/32,HK
-  - DOMAIN-SUFFIX,qbittorrent.org,US
-  - DOMAIN-SUFFIX,daliansky.net,HK
+#  - IP-CIDR,103.133.176.77/32,HK
+  - DOMAIN-SUFFIX,qbittorrent.org,LA01-LA03
+  - DOMAIN-SUFFIX,daliansky.net,LA01-LA03
   - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
   - GEOIP,CN,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
