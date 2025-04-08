@@ -169,7 +169,7 @@ proxy-groups:
       - DE
       - GB
       - LA01-LA03
-      - LA01-HiNet01
+      - HiNet01
       - 俄罗斯CN2-rl
   - name: SpeedTest
     type: select
@@ -183,7 +183,7 @@ proxy-groups:
       - DE
       - GB
       - LA01-LA03
-      - LA01-HiNet01
+      - HiNet01
       - 俄罗斯CN2-rl
   - name: IPInfo
     type: select
@@ -197,7 +197,7 @@ proxy-groups:
       - DE
       - GB
       - LA01-LA03
-      - LA01-HiNet01
+      - HiNet01
       - 俄罗斯CN2-rl
   - name: Final
     type: select
@@ -211,7 +211,7 @@ proxy-groups:
       - DE
       - GB
       - LA01-LA03
-      - LA01-HiNet01
+      - HiNet01
       - 俄罗斯CN2-rl
 rules:
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
