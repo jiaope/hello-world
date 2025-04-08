@@ -8,7 +8,7 @@ proxies:
     udp: true
     servername: 168000.xyz
     flow: xtls-rprx-vision
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     reality-opts:
       public-key: lB2sqYU1MIPXVJUuja9biHrtdIIX7KdUS17hIQnykWc
@@ -22,7 +22,7 @@ proxies:
     udp: true
     servername: aws.amazon.com
     flow: xtls-rprx-vision
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     reality-opts:
       public-key: Z9wfNTnMfXZT_XL9NUjmFakkFFN3atWIA8rzJJ2NlFY
@@ -36,7 +36,7 @@ proxies:
     udp: true
     servername: addons.mozilla.org
     flow: xtls-rprx-vision
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     reality-opts:
       public-key: 8n5WXHWK61pKjeTfj_DHnUiF3hpC7theNZNMm-BbpgI
@@ -50,7 +50,7 @@ proxies:
     udp: true
     servername: 2akribis.com
     flow: xtls-rprx-vision
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     reality-opts:
       public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY
@@ -64,7 +64,7 @@ proxies:
     udp: true
     servername: 168000.xyz
     flow: xtls-rprx-vision
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     reality-opts:
       public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo
@@ -78,7 +78,7 @@ proxies:
     udp: true
     servername: 168000.xyz
     flow: xtls-rprx-vision
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     reality-opts:
       public-key: ZXztrqKcymvBj72GV0W26JD2iZfV97aUQoxuxo83UFA
@@ -92,7 +92,7 @@ proxies:
     udp: true
     servername: 2akribis.com
     flow: xtls-rprx-vision
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     reality-opts:
       public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM
@@ -106,7 +106,7 @@ proxies:
     udp: true
     servername: 2akribis.com
     flow: xtls-rprx-vision
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     reality-opts:
       public-key: 7LRiRuepWG2MQm1LwfGFEzYuGZ6VsmWqVdAXvp4JFWU
