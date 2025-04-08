@@ -115,6 +115,12 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 rule-providers:
+  category-ai-!cn:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.yaml
+    path: ./ruleset/category-ai-!cn.yaml
+    interval: 86400
 proxies:
   - {name: iPhone13PM, server: 172.16.80.24, port: 10214, type: socks5, udp: true}
   - {name: 🇭🇰 Hong Kong 08, server: q9ohocwbd.nmmis.com, port: 15024, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
@@ -220,6 +226,7 @@ proxy-groups:
       - LA01-LA03
       - 俄罗斯CN2-rl
 rules:
+  - RULE-SET,category-ai-!cn,LA01-LA03
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
   - DOMAIN-SUFFIX,acervcon.com,Acer
   - DOMAIN-SUFFIX,amazonaws.com,Acer
