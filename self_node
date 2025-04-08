@@ -69,20 +69,6 @@ proxies:
     reality-opts:
       public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo
       short-id: e6ef20d45d410596
-  - name: LA01-HiNet01
-    type: vless
-    server: la01.169278.xyz
-    port: 45715
-    uuid: ec5a3365-893d-4aae-87eb-f1f7fa4fc96e
-    tls: true
-    udp: true
-    servername: 168000.xyz
-    flow: xtls-rprx-vision
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: ZXztrqKcymvBj72GV0W26JD2iZfV97aUQoxuxo83UFA
-      short-id: ced8ef522c71cf80
   - name: HK01-HiNet01
     type: vless
     server: hk01.169278.xyz
