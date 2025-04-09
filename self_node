@@ -120,4 +120,31 @@ proxies:
     udp: true
     udp-over-tcp: true
     udp-over-tcp-version: 2
+  - name: HKT02
+    type: ss
+    server: hkt02.169278.xyz
+    port: 
+    cipher: 2022-blake3-aes-128-gcm
+    password: ""
+    udp: true
+    udp-over-tcp: true
+    udp-over-tcp-version: 2
+  - name: HiNet01
+    type: ss
+    server: 
+    port: 
+    cipher: 2022-blake3-aes-128-gcm
+    password: ""
+    udp: true
+    udp-over-tcp: true
+    udp-over-tcp-version: 2
+  - name: LA03
+    type: ss
+    server: la02.169278.xyz
+    port: 
+    cipher: 2022-blake3-aes-128-gcm
+    password: ""
+    udp: true
+    udp-over-tcp: true
+    udp-over-tcp-version: 2
 
