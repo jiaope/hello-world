@@ -188,104 +188,6 @@ proxies:
   - {name: HK01-HiNet01, type: vless, server: hk01.169278.xyz, port: 22451, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, udp: true, servername: 2akribis.com, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: 8d5ee8fe74918fbb } }
   - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
 proxy-groups:
-  - name: HK
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇭🇰 Hong Kong 01
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇰 Hong Kong 03
-      - 🇭🇰 Hong Kong 04
-      - 🇭🇰 Hong Kong 05
-      - 🇭🇰 Hong Kong 06
-      - 🇭🇰 Hong Kong 07
-      - 🇭🇰 Hong Kong 08
-      - 🇭🇰 Hong Kong 09
-      - 🇭🇰 Hong Kong 10
-  - name: US
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇺🇸 United States 01
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03
-      - 🇺🇸 United States 04
-      - 🇺🇸 United States 05
-  - name: JP
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇯🇵 Japan 01
-      - 🇯🇵 Japan 02
-      - 🇯🇵 Japan 03
-      - 🇯🇵 Japan 04
-      - 🇯🇵 Japan 05
-  - name: TW
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇨🇳 Taiwan 01
-      - 🇨🇳 Taiwan 02
-      - 🇨🇳 Taiwan 03
-      - 🇨🇳 Taiwan 04
-      - 🇨🇳 Taiwan 05
-  - name: SG
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇸🇬 Singapore 01
-      - 🇸🇬 Singapore 02
-      - 🇸🇬 Singapore 03
-      - 🇸🇬 Singapore 04
-      - 🇸🇬 Singapore 05
-  - name: DE
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇩🇪 Germany 01
-      - 🇩🇪 Germany 02
-      - 🇩🇪 Germany 03
-  - name: UK
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇬🇧 United Kingdom 01
-      - 🇬🇧 United Kingdom 02
-      - 🇬🇧 United Kingdom 03
-  - name: HK-HKT01
-    type: relay
-    proxies:
-      - HK
-      - HKT01
-  - name: HK-HKT02
-    type: relay
-    proxies:
-      - HK
-      - HKT02
-  - name: TW-HiNet02
-    type: relay
-    proxies:
-      - TW
-      - HiNet02
-  - name: US-LA03
-    type: relay
-    proxies:
-      - US
-      - LA03
   - name: AI-!CN
     type: select
     proxies:
@@ -406,6 +308,104 @@ proxy-groups:
       - DE
       - UK
       - 俄罗斯CN2-rl
+  - name: HK
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+  - name: US
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+  - name: JP
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+  - name: TW
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+      - 🇨🇳 Taiwan 03
+      - 🇨🇳 Taiwan 04
+      - 🇨🇳 Taiwan 05
+  - name: SG
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+  - name: DE
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇩🇪 Germany 01
+      - 🇩🇪 Germany 02
+      - 🇩🇪 Germany 03
+  - name: UK
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇬🇧 United Kingdom 01
+      - 🇬🇧 United Kingdom 02
+      - 🇬🇧 United Kingdom 03
+  - name: HK-HKT01
+    type: relay
+    proxies:
+      - HK
+      - HKT01
+  - name: HK-HKT02
+    type: relay
+    proxies:
+      - HK
+      - HKT02
+  - name: TW-HiNet02
+    type: relay
+    proxies:
+      - TW
+      - HiNet02
+  - name: US-LA03
+    type: relay
+    proxies:
+      - US
+      - LA03
 rules:
   - RULE-SET,category-ai-!cn,AI-!CN
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
