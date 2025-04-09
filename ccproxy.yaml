@@ -266,76 +266,111 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
       - HK
       - US
       - JP
       - TW
       - SG
-      - DE
-      - GB
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
       - 俄罗斯CN2-rl
   - name: Acer
     type: select
     proxies:
       - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
       - HK
       - US
       - JP
       - TW
       - SG
-      - DE
-      - GB
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
       - 俄罗斯CN2-rl
   - name: SpeedTest
     type: select
     proxies:
       - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
       - HK
       - US
       - JP
       - TW
       - SG
-      - DE
-      - GB
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
       - 俄罗斯CN2-rl
   - name: IPInfo
     type: select
     proxies:
       - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
       - HK
       - US
       - JP
       - TW
       - SG
-      - DE
-      - GB
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
       - 俄罗斯CN2-rl
   - name: Final
     type: select
     proxies:
       - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
       - HK
       - US
       - JP
       - TW
       - SG
-      - DE
-      - GB
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
       - 俄罗斯CN2-rl
 rules:
   - RULE-SET,category-ai-!cn,AI-!CN
