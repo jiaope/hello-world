@@ -123,9 +123,9 @@ proxies:
   - name: HKT02
     type: ss
     server: hkt02.169278.xyz
-    port: 
+    port: 11301
     cipher: 2022-blake3-aes-128-gcm
-    password: ""
+    password: "ynhW6gSU12tSRrbVQt9zaQ=="
     udp: true
     udp-over-tcp: true
     udp-over-tcp-version: 2
