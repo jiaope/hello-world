@@ -129,7 +129,7 @@ proxies:
     udp: true
     udp-over-tcp: true
     udp-over-tcp-version: 2
-  - name: HiNet01
+  - name: HiNet02
     type: ss
     server: 
     port: 
