@@ -112,12 +112,12 @@ proxies:
       public-key: JE6yA3RUJGP4r3y1xR5FxIo-KIuyvXcy2X5Sry8Rblc
       short-id: c13c36b5410af9ce
   - name: HKT01
-     type: ss
-     server: hkt01.169278.xyz
-     port: 32811
-     cipher: 2022-blake3-aes-128-gcm
-     password: "ZeZoEhyFbRs2wKVHeffeLw=="
-     udp: true
-     udp-over-tcp: true
-     udp-over-tcp-version: 2
+    type: ss
+    server: hkt01.169278.xyz
+    port: 32811
+    cipher: 2022-blake3-aes-128-gcm
+    password: "ZeZoEhyFbRs2wKVHeffeLw=="
+    udp: true
+    udp-over-tcp: true
+    udp-over-tcp-version: 2
 
