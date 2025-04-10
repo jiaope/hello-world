@@ -158,15 +158,11 @@ proxies:
   - {name: 🇨🇳 Taiwan 04, server: q9ohocwbd.nmmis.com, port: 19004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇨🇳 Taiwan 05, server: q9ohocwbd.nmmis.com, port: 19014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
 
-  - {name: LA01-LA03, type: vless, server: la01.169278.xyz, port: 25449, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, udp: true, servername: 168000.xyz, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: f5a8832d7140aab5 } }
-  - {name: HK01-HiNet01, type: vless, server: hk01.169278.xyz, port: 22451, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, udp: true, servername: 2akribis.com, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: 8d5ee8fe74918fbb } }
-  - {name: HK01-HKT02, type: vless, server: hk01.169278.xyz, port: 43342, uuid: f70e0d97-293e-4d57-bb36-f338fbef08f8, tls: true, udp: true, servername: 2akribis.com, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: JE6yA3RUJGP4r3y1xR5FxIo-KIuyvXcy2X5Sry8Rblc, short-id: 121a1dec6aad3bff } }  
   - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
 
-  - {name: HKT01, server: hkt01.169278.xyz, port: 32811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZeZoEhyFbRs2wKVHeffeLw==, udp: true}
-  - {name: HKT02, server: hkt02.169278.xyz, port: 11301, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ynhW6gSU12tSRrbVQt9zaQ==, udp: true}
-  - {name: HiNet02, server: hinet.pai3.uk, port: 17699, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZU8OqQxBio6n/5PY43wDRw==:QxSosMYlgM0rOznNlA/cTw==, udp: true}
-  - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true}
+  - {name: HKT02, server: hkt02.169278.xyz, port: 11301, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ynhW6gSU12tSRrbVQt9zaQ==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
+  - {name: HiNet02, server: hinet.pai3.uk, port: 17699, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZU8OqQxBio6n/5PY43wDRw==:QxSosMYlgM0rOznNlA/cTw==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
+  - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   
 
 proxy-groups:
@@ -174,121 +170,56 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - HK01-HKT01
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
-      - HK-HKT01
       - HK-HKT02
       - TW-HiNet02
       - US-LA03
-      - HK01
-      - LA01
-      - LA02
-      - HiNet01
       - HK
-      - US
-      - JP
       - TW
-      - SG
-      - DE
-      - UK
+      - US
       - 俄罗斯CN2-rl
   - name: Acer
     type: select
     proxies:
       - DIRECT
-      - HK01-HKT01
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
-      - HK-HKT01
       - HK-HKT02
       - TW-HiNet02
       - US-LA03
-      - HK01
-      - LA01
-      - LA02
-      - HiNet01
       - HK
-      - US
-      - JP
       - TW
-      - SG
-      - DE
-      - UK
+      - US
       - 俄罗斯CN2-rl
   - name: SpeedTest
     type: select
     proxies:
       - DIRECT
-      - HK01-HKT01
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
-      - HK-HKT01
       - HK-HKT02
       - TW-HiNet02
       - US-LA03
-      - HK01
-      - LA01
-      - LA02
-      - HiNet01
       - HK
-      - US
-      - JP
       - TW
-      - SG
-      - DE
-      - UK
+      - US
       - 俄罗斯CN2-rl
   - name: IPInfo
     type: select
     proxies:
       - DIRECT
-      - HK01-HKT01
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
-      - HK-HKT01
       - HK-HKT02
       - TW-HiNet02
       - US-LA03
-      - HK01
-      - LA01
-      - LA02
-      - HiNet01
       - HK
-      - US
-      - JP
       - TW
-      - SG
-      - DE
-      - UK
+      - US
       - 俄罗斯CN2-rl
   - name: Final
     type: select
     proxies:
       - DIRECT
-      - HK01-HKT01
-      - HK01-HKT02
-      - HK01-HiNet01
-      - LA01-LA03
-      - HK-HKT01
       - HK-HKT02
       - TW-HiNet02
       - US-LA03
-      - HK01
-      - LA01
-      - LA02
-      - HiNet01
       - HK
-      - US
-      - JP
       - TW
-      - SG
-      - DE
-      - UK
+      - US
       - 俄罗斯CN2-rl
   - name: HK
     type: url-test
@@ -317,17 +248,6 @@ proxy-groups:
       - 🇺🇸 United States 03
       - 🇺🇸 United States 04
       - 🇺🇸 United States 05
-  - name: JP
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇯🇵 Japan 01
-      - 🇯🇵 Japan 02
-      - 🇯🇵 Japan 03
-      - 🇯🇵 Japan 04
-      - 🇯🇵 Japan 05
   - name: TW
     type: url-test
     url: http://www.google.com/generate_204
@@ -339,40 +259,6 @@ proxy-groups:
       - 🇨🇳 Taiwan 03
       - 🇨🇳 Taiwan 04
       - 🇨🇳 Taiwan 05
-  - name: SG
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇸🇬 Singapore 01
-      - 🇸🇬 Singapore 02
-      - 🇸🇬 Singapore 03
-      - 🇸🇬 Singapore 04
-      - 🇸🇬 Singapore 05
-  - name: DE
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇩🇪 Germany 01
-      - 🇩🇪 Germany 02
-      - 🇩🇪 Germany 03
-  - name: UK
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇬🇧 United Kingdom 01
-      - 🇬🇧 United Kingdom 02
-      - 🇬🇧 United Kingdom 03
-  - name: HK-HKT01
-    type: relay
-    proxies:
-      - HK
-      - HKT01
   - name: HK-HKT02
     type: relay
     proxies:
@@ -402,12 +288,8 @@ rules:
   - DOMAIN-SUFFIX,speed.cloudflare.com,SpeedTest
   - DOMAIN-SUFFIX,speed.dler.io,SpeedTest
   - DOMAIN-KEYWORD,speedtest,SpeedTest
-  - DOMAIN-SUFFIX,routinehub.co,HK-HKT02
-  - DOMAIN-SUFFIX,v2ex.com,HK-HKT02
   - DOMAIN-SUFFIX,api.day.app,DIRECT
 #  - IP-CIDR,103.133.176.77/32,HK
-  - DOMAIN-SUFFIX,qbittorrent.org,HK-HKT02
-  - DOMAIN-SUFFIX,daliansky.net,HK-HKT02
   - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
   - GEOIP,CN,DIRECT
   - GEOSITE,cn,DIRECT
