@@ -125,6 +125,7 @@ dns:
       - +.googleapis.cn
       - +.googleapis.com
       - +.gvt1.com
+
 rule-providers:
   category-ai-!cn:
     type: http
@@ -132,8 +133,10 @@ rule-providers:
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.yaml
     path: ./ruleset/category-ai-!cn.yaml
     interval: 86400
+
 proxies:
-  - {name: iPhone13PM, server: 172.16.80.24, port: 10214, type: socks5, udp: true}
+  # - {name: iPhone13PM, server: 172.16.80.24, port: 10214, type: socks5, udp: true}
+  
   - {name: 🇭🇰 Hong Kong 01, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇭🇰 Hong Kong 02, server: q9ohocwbd.nmmis.com, port: 15001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇭🇰 Hong Kong 03, server: q9ohocwbd.nmmis.com, port: 15004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
@@ -144,16 +147,6 @@ proxies:
   - {name: 🇭🇰 Hong Kong 08, server: q9ohocwbd.nmmis.com, port: 15011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇭🇰 Hong Kong 09, server: q9ohocwbd.nmmis.com, port: 15014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇭🇰 Hong Kong 10, server: q9ohocwbd.nmmis.com, port: 15007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇸🇬 Singapore 01, server: q9ohocwbd.nmmis.com, port: 18811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇸🇬 Singapore 02, server: q9ohocwbd.nmmis.com, port: 18801, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇸🇬 Singapore 03, server: q9ohocwbd.nmmis.com, port: 18804, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇸🇬 Singapore 04, server: q9ohocwbd.nmmis.com, port: 18814, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇸🇬 Singapore 05, server: q9ohocwbd.nmmis.com, port: 18807, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇯🇵 Japan 01, server: waj367fcn.nmmis.com, port: 17007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇯🇵 Japan 02, server: waj367fcn.nmmis.com, port: 17004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇯🇵 Japan 03, server: waj367fcn.nmmis.com, port: 17011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇯🇵 Japan 04, server: waj367fcn.nmmis.com, port: 17001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇯🇵 Japan 05, server: waj367fcn.nmmis.com, port: 17014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇺🇸 United States 01, server: waj367fcn.nmmis.com, port: 16007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇺🇸 United States 02, server: waj367fcn.nmmis.com, port: 16004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇺🇸 United States 03, server: waj367fcn.nmmis.com, port: 16011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
@@ -164,29 +157,18 @@ proxies:
   - {name: 🇨🇳 Taiwan 03, server: q9ohocwbd.nmmis.com, port: 19011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇨🇳 Taiwan 04, server: q9ohocwbd.nmmis.com, port: 19004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇨🇳 Taiwan 05, server: q9ohocwbd.nmmis.com, port: 19014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇩🇪 Germany 01, server: q9ohocwbd.nmmis.com, port: 21001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇩🇪 Germany 02, server: q9ohocwbd.nmmis.com, port: 21007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇩🇪 Germany 03, server: q9ohocwbd.nmmis.com, port: 21004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇬🇧 United Kingdom 01, server: q9ohocwbd.nmmis.com, port: 22001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇬🇧 United Kingdom 02, server: q9ohocwbd.nmmis.com, port: 22004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇬🇧 United Kingdom 03, server: q9ohocwbd.nmmis.com, port: 22007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: LA01, server: la01.169278.xyz, port: 443, type: vless, uuid: 14ef7c56-2cb0-43d4-9f9f-0b201d245a3c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: lB2sqYU1MIPXVJUuja9biHrtdIIX7KdUS17hIQnykWc, short-id: "16e1e76aabf7adb4" }, servername: 168000.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: LA02, server: 204.235.240.49, port: 30012, type: vless, uuid: aaa7d5b9-a6b8-4cdf-adf1-0977ea4340b4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Z9wfNTnMfXZT_XL9NUjmFakkFFN3atWIA8rzJJ2NlFY}, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: HiNet01, server: hinet.pai3.uk, port: 39113, type: vless, uuid: afce9e12-07a0-4aa1-87f6-4715555e21a2, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 8n5WXHWK61pKjeTfj_DHnUiF3hpC7theNZNMm-BbpgI, short-id: "68f3e3c532" }, servername: addons.mozilla.org, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: HK01, server: hk01.169278.xyz, port: 443, type: vless, uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY, short-id: "0027a7a4f00365c5" }, servername: 2akribis.com, client-fingerprint: chrome, network: tcp, udp: true}
-#  - {name: LA01-LA03, server: la01.169278.xyz, port: 25449, type: vless, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: "e6ef20d45d410596" }, servername: 168000.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-#  - {name: HK01-HiNet01, server: hk01.169278.xyz, port: 22451, type: vless, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: "a4af0bce7a176894" }, servername: 2akribis.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: HK01-HKT01, server: hk01.169278.xyz, port: 22605, type: vless, uuid: 31d6ade0-7bfb-4329-a499-727ddc43830c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 7LRiRuepWG2MQm1LwfGFEzYuGZ6VsmWqVdAXvp4JFWU, short-id: "d1e4929ccaf812f1" }, servername: 2akribis.com, client-fingerprint: chrome, network: tcp, udp: true}
-#  - {name: HK01-HKT02, server: hk01.169278.xyz, port: 43342, type: vless, uuid: f70e0d97-293e-4d57-bb36-f338fbef08f8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: JE6yA3RUJGP4r3y1xR5FxIo-KIuyvXcy2X5Sry8Rblc, short-id: "c13c36b5410af9ce" }, servername: 2akribis.com, client-fingerprint: chrome, network: tcp, udp: true}
+
+  - {name: LA01-LA03, type: vless, server: la01.169278.xyz, port: 25449, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, udp: true, servername: 168000.xyz, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: f5a8832d7140aab5 } }
+  - {name: HK01-HiNet01, type: vless, server: hk01.169278.xyz, port: 22451, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, udp: true, servername: 2akribis.com, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: 8d5ee8fe74918fbb } }
+  - {name: HK01-HKT02, type: vless, server: hk01.169278.xyz, port: 43342, uuid: f70e0d97-293e-4d57-bb36-f338fbef08f8, tls: true, udp: true, servername: 2akribis.com, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: JE6yA3RUJGP4r3y1xR5FxIo-KIuyvXcy2X5Sry8Rblc, short-id: 121a1dec6aad3bff } }  
+  - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
+
   - {name: HKT01, server: hkt01.169278.xyz, port: 32811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZeZoEhyFbRs2wKVHeffeLw==, udp: true}
   - {name: HKT02, server: hkt02.169278.xyz, port: 11301, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ynhW6gSU12tSRrbVQt9zaQ==, udp: true}
   - {name: HiNet02, server: hinet.pai3.uk, port: 17699, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZU8OqQxBio6n/5PY43wDRw==:QxSosMYlgM0rOznNlA/cTw==, udp: true}
   - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true}
   
-  - {name: LA01-LA03, type: vless, server: la01.169278.xyz, port: 25449, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, udp: true, servername: 168000.xyz, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: f5a8832d7140aab5 } }
-  - {name: HK01-HKT02, type: vless, server: hk01.169278.xyz, port: 43342, uuid: f70e0d97-293e-4d57-bb36-f338fbef08f8, tls: true, udp: true, servername: 2akribis.com, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: JE6yA3RUJGP4r3y1xR5FxIo-KIuyvXcy2X5Sry8Rblc, short-id: 121a1dec6aad3bff } }
-  - {name: HK01-HiNet01, type: vless, server: hk01.169278.xyz, port: 22451, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, udp: true, servername: 2akribis.com, flow: xtls-rprx-vision, skip-cert-verify: false, client-fingerprint: chrome, reality-opts: { public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: 8d5ee8fe74918fbb } }
-  - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
+
 proxy-groups:
   - name: AI-!CN
     type: select
