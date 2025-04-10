@@ -168,7 +168,7 @@ proxies:
   - {name: 🇨🇳 Taiwan 04, server: q9ohocwbd.nmmis.com, port: 19004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇨🇳 Taiwan 05, server: q9ohocwbd.nmmis.com, port: 19014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
 
-  - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: 24b05fcf3723e6af } }
+  - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: "24b05fcf3723e6af" } }
 
   - {name: HKT02, server: hkt02.169278.xyz, port: 11301, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ynhW6gSU12tSRrbVQt9zaQ==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   - {name: HiNet02, server: hinet.pai3.uk, port: 17699, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZU8OqQxBio6n/5PY43wDRw==:QxSosMYlgM0rOznNlA/cTw==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
