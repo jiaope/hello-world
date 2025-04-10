@@ -1,0 +1,1223 @@
+mixed-port: 12345
+allow-lan: true
+mode: Rule
+log-level: info
+ipv6: false
+cfw-latency-timeout: 5000
+cfw-latency-url: http://www.google.com/generate_204
+clash-for-android:
+  append-system-dns: false
+geodata-mode: true
+geodata-loader: memconservative
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.db
+  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:8853
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - time1.cloud.tencent.com
+    - time.ustc.edu.cn
+    - pool.ntp.org
+    - "*.pool.ntp.org"
+    - ntp.ubuntu.com
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time1.aliyun.com
+    - time2.aliyun.com
+    - time3.aliyun.com
+    - time4.aliyun.com
+    - time5.aliyun.com
+    - time6.aliyun.com
+    - time7.aliyun.com
+    - "*.time.edu.cn"
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  nameserver:
+    - https://223.6.6.6/dns-query
+    - https://rubyfish.cn/dns-query
+    - https://dns.pub/dns-query
+  fallback:
+    - https://dns.rubyfish.cn/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - tls://8.8.4.4
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
+rule-providers:
+  category-ai-!cn:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.yaml
+    path: ./rules/category-ai-!cn.yaml
+    interval: 86400
+  SpeedTest:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml
+    interval: 86400
+    path: ./rules/SpeedTest.yaml
+  Icloud:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iCloud/iCloud.yaml
+    interval: 86400
+    path: ./rules/Icloud.yaml
+  Apple:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+    interval: 86400
+    path: ./rules/Apple.yaml
+  Apple_Domain:
+    behavior: domain
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Domain.yaml
+    interval: 86400
+    path: ./rules/Apple_Domain.yaml
+  AppleDev:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleDev/AppleDev.yaml
+    interval: 86400
+    path: ./rules/AppleDev.yaml
+  Beats:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Beats/Beats.yaml
+    interval: 86400
+    path: ./rules/Beats.yaml
+  AppleID:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleID/AppleID.yaml
+    interval: 86400
+    path: ./rules/AppleID.yaml
+  SystemOTA:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SystemOTA/SystemOTA.yaml
+    interval: 86400
+    path: ./rules/SystemOTA.yaml
+  Game:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+    interval: 86400
+    path: ./rules/Game.yaml
+  Discord:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
+    interval: 86400
+    path: ./rules/Discord.yaml
+  PayPal:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml
+    interval: 86400
+    path: ./rules/PayPal.yaml
+  Pixiv:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pixiv/Pixiv.yaml
+    interval: 86400
+    path: ./rules/Pixiv.yaml
+  Pinterest:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pinterest/Pinterest.yaml
+    interval: 86400
+    path: ./rules/Pinterest.yaml
+  Duolingo:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Duolingo/Duolingo.yaml
+    interval: 86400
+    path: ./rules/Duolingo.yaml
+  TikTok:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+    interval: 86400
+    path: ./rules/TikTok.yaml
+  GoogleSearch:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleSearch/GoogleSearch.yaml
+    interval: 86400
+    path: ./rules/GoogleSearch.yaml
+  Twitter:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
+    interval: 86400
+    path: ./rules/Twitter.yaml
+  Instagram:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.yaml
+    interval: 86400
+    path: ./rules/Instagram.yaml
+  Facebook:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml
+    interval: 86400
+    path: ./rules/Facebook.yaml
+  Whatsapp:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml
+    interval: 86400
+    path: ./rules/Whatsapp.yaml
+  Google:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+    interval: 86400
+    path: ./rules/Google.yaml
+  Chromecast:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Chromecast/Chromecast.yaml
+    interval: 86400
+    path: ./rules/Chromecast.yaml
+  GoogleFCM:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.yaml
+    interval: 86400
+    path: ./rules/GoogleFCM.yaml
+  Youtube:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    interval: 86400
+    path: ./rules/Youtube.yaml
+  YoutubeMusic:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+    interval: 86400
+    path: ./rules/YoutubeMusic.yaml
+  GoogleVoice:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleVoice/GoogleVoice.yaml
+    interval: 86400
+    path: ./rules/GoogleVoice.yaml
+  Microsoft:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    interval: 86400
+    path: ./rules/Microsoft.yaml
+  Bing:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+    interval: 86400
+    path: ./rules/Bing.yaml
+  GitHub:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+    interval: 86400
+    path: ./rules/GitHub.yaml
+  GitLab:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitLab/GitLab.yaml
+    interval: 86400
+    path: ./rules/GitLab.yaml
+  GitBook:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitBook/GitBook.yaml
+    interval: 86400
+    path: ./rules/GitBook.yaml
+  Amazon:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.yaml
+    interval: 86400
+    path: ./rules/Amazon.yaml
+  AmazonPrimeVideo:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml
+    interval: 86400
+    path: ./rules/AmazonPrimeVideo.yaml
+  PrimeVideo:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.yaml
+    interval: 86400
+    path: ./rules/PrimeVideo.yaml
+  Spotify:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    interval: 86400
+    path: ./rules/Spotify.yaml
+  Telegram:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    interval: 86400
+    path: ./rules/Telegram.yaml
+  Line:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Line/Line.yaml
+    interval: 86400
+    path: ./rules/Line.yaml
+  LineTV:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LineTV/LineTV.yaml
+    interval: 86400
+    path: ./rules/LineTV.yaml
+  Twitch:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
+    interval: 86400
+    path: ./rules/Twitch.yaml
+  Netflix:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    interval: 86400
+    path: ./rules/Netflix.yaml
+  Disney+:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+    interval: 86400
+    path: ./rules/Disney+.yaml
+  Bahamut:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml
+    interval: 86400
+    path: ./rules/Bahamut.yaml
+  Wikipedia:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Wikipedia/Wikipedia.yaml
+    interval: 86400
+    path: ./rules/Wikipedia.yaml
+  Wikimedia:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Wikimedia/Wikimedia.yaml
+    interval: 86400
+    path: ./rules/Wikimedia.yaml
+  Reddit:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.yaml
+    interval: 86400
+    path: ./rules/Reddit.yaml
+  ProtonMail:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Protonmail/Protonmail.yaml
+    interval: 86400
+    path: ./rules/ProtonMail.yaml
+  TeraBox:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TeraBox/TeraBox.yaml
+    interval: 86400
+    path: ./rules/TeraBox.yaml
+  PikPak:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PikPak/PikPak.yaml
+    interval: 86400
+    path: ./rules/PikPak.yaml
+  BiliBili:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
+    interval: 86400
+    path: ./rules/BiliBili.yaml
+  BiliBiliIntl:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBiliIntl/BiliBiliIntl.yaml
+    interval: 86400
+    path: ./rules/BiliBiliIntl.yaml
+  WeChat:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
+    interval: 86400
+    path: ./rules/WeChat.yaml
+  Tencent:
+    behavior: classical
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.yaml
+    interval: 86400
+    path: ./rules/Tencent.yaml
+proxies:
+  - {name: Resident, server: 185.130.105.109, port: 10000, type: socks5, username: 600e1890071cd8c7, password: RNW78Fm5}
+  - {name: OpenClash, server: 192.168.1.253, port: 12345, type: socks5}
+  - {name: Traffic Reset：17 Days Left, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🏳️‍🌈 Expire Date：2025/09/29, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇬🇧 7.55 GB | 200 GB, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 01, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 02, server: q9ohocwbd.nmmis.com, port: 15001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 03, server: q9ohocwbd.nmmis.com, port: 15004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 04, server: q9ohocwbd.nmmis.com, port: 15031, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 05, server: q9ohocwbd.nmmis.com, port: 15027, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 06, server: q9ohocwbd.nmmis.com, port: 15021, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 07, server: q9ohocwbd.nmmis.com, port: 15024, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 08, server: q9ohocwbd.nmmis.com, port: 15011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 09, server: q9ohocwbd.nmmis.com, port: 15014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇭🇰 Hong Kong 10, server: q9ohocwbd.nmmis.com, port: 15007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇸🇬 Singapore 01, server: q9ohocwbd.nmmis.com, port: 18811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇸🇬 Singapore 02, server: q9ohocwbd.nmmis.com, port: 18801, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇸🇬 Singapore 03, server: q9ohocwbd.nmmis.com, port: 18804, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇸🇬 Singapore 04, server: q9ohocwbd.nmmis.com, port: 18814, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇸🇬 Singapore 05, server: q9ohocwbd.nmmis.com, port: 18807, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇯🇵 Japan 01, server: waj367fcn.nmmis.com, port: 17007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇯🇵 Japan 02, server: waj367fcn.nmmis.com, port: 17004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇯🇵 Japan 03, server: waj367fcn.nmmis.com, port: 17011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇯🇵 Japan 04, server: waj367fcn.nmmis.com, port: 17001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇯🇵 Japan 05, server: waj367fcn.nmmis.com, port: 17014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇺🇸 United States 01, server: waj367fcn.nmmis.com, port: 16007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇺🇸 United States 02, server: waj367fcn.nmmis.com, port: 16004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇺🇸 United States 03, server: waj367fcn.nmmis.com, port: 16011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇺🇸 United States 04, server: waj367fcn.nmmis.com, port: 16001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇺🇸 United States 05, server: waj367fcn.nmmis.com, port: 16014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇨🇳 Taiwan 01, server: q9ohocwbd.nmmis.com, port: 19001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇨🇳 Taiwan 02, server: q9ohocwbd.nmmis.com, port: 19007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇨🇳 Taiwan 03, server: q9ohocwbd.nmmis.com, port: 19011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇨🇳 Taiwan 04, server: q9ohocwbd.nmmis.com, port: 19004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇨🇳 Taiwan 05, server: q9ohocwbd.nmmis.com, port: 19014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇩🇪 Germany 01, server: q9ohocwbd.nmmis.com, port: 21001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇩🇪 Germany 02, server: q9ohocwbd.nmmis.com, port: 21007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇩🇪 Germany 03, server: q9ohocwbd.nmmis.com, port: 21004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇬🇧 United Kingdom 01, server: q9ohocwbd.nmmis.com, port: 22001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇬🇧 United Kingdom 02, server: q9ohocwbd.nmmis.com, port: 22004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇬🇧 United Kingdom 03, server: q9ohocwbd.nmmis.com, port: 22007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇰🇷 South Korea 01, server: waj367fcn.nmmis.com, port: 24001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇫🇷 France 01, server: q9ohocwbd.nmmis.com, port: 25001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇳🇱 Netherlands 01, server: q9ohocwbd.nmmis.com, port: 26001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: 🇮🇳 India 01, server: q9ohocwbd.nmmis.com, port: 27001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: Türkiye 01, server: q9ohocwbd.nmmis.com, port: 28001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  - {name: LA01, server: la01.169278.xyz, port: 443, type: vless, uuid: 14ef7c56-2cb0-43d4-9f9f-0b201d245a3c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: lB2sqYU1MIPXVJUuja9biHrtdIIX7KdUS17hIQnykWc, short-id: "16e1e76aabf7adb4" }, servername: 168000.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: LA02, server: 204.235.240.49, port: 30012, type: vless, uuid: aaa7d5b9-a6b8-4cdf-adf1-0977ea4340b4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Z9wfNTnMfXZT_XL9NUjmFakkFFN3atWIA8rzJJ2NlFY}, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: HiNet01, server: hinet.pai3.uk, port: 39113, type: vless, uuid: afce9e12-07a0-4aa1-87f6-4715555e21a2, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 8n5WXHWK61pKjeTfj_DHnUiF3hpC7theNZNMm-BbpgI, short-id: "68f3e3c532" }, servername: addons.mozilla.org, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: HK01, server: hk01.169278.xyz, port: 443, type: vless, uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY, short-id: "0027a7a4f00365c5" }, servername: 2akribis.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: LA01-LA03, server: la01.169278.xyz, port: 25449, type: vless, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: "e6ef20d45d410596" }, servername: 168000.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: HK01-HiNet01, server: hk01.169278.xyz, port: 22451, type: vless, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: "a4af0bce7a176894" }, servername: 2akribis.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: HK01-HKT01, server: hk01.169278.xyz, port: 22605, type: vless, uuid: 31d6ade0-7bfb-4329-a499-727ddc43830c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 7LRiRuepWG2MQm1LwfGFEzYuGZ6VsmWqVdAXvp4JFWU, short-id: "d1e4929ccaf812f1" }, servername: 2akribis.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: HK01-HKT02, server: hk01.169278.xyz, port: 43342, type: vless, uuid: f70e0d97-293e-4d57-bb36-f338fbef08f8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: JE6yA3RUJGP4r3y1xR5FxIo-KIuyvXcy2X5Sry8Rblc, short-id: "c13c36b5410af9ce" }, servername: 2akribis.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: HKT01, server: hkt01.169278.xyz, port: 32811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZeZoEhyFbRs2wKVHeffeLw==, udp: true}
+  - {name: HKT02, server: hkt02.169278.xyz, port: 11301, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ynhW6gSU12tSRrbVQt9zaQ==, udp: true}
+  - {name: HiNet02, server: hinet.pai3.uk, port: 17699, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZU8OqQxBio6n/5PY43wDRw==:QxSosMYlgM0rOznNlA/cTw==, udp: true}
+  - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true}
+proxy-groups:
+  - name: PayPal
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Game
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: AI-!CN
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: GoogleSearch
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Twitter
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Meta
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: YouTube
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Alphabet
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: GitHub
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Bing
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Microsoft
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Amazon
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Spotify
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Telegram
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Wiki
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Reddit
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Final
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Pixiv
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Duolingo
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: TikTok
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Twitch
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Bahamut
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: TeraBox
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: PikPak
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: HK
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+  - name: US
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+  - name: JP
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+  - name: TW
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan 02
+      - 🇨🇳 Taiwan 03
+      - 🇨🇳 Taiwan 04
+      - 🇨🇳 Taiwan 05
+  - name: SG
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+  - name: HK-HKT01
+    type: relay
+    proxies:
+      - HK
+      - HKT01
+  - name: HK-HKT02
+    type: relay
+    proxies:
+      - HK
+      - HKT02
+  - name: TW-HiNet02
+    type: relay
+    proxies:
+      - TW
+      - HiNet02
+  - name: US-LA03
+    type: relay
+    proxies:
+      - US
+      - LA03
+  - name: SpeedTest
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Icloud
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+  - name: Apple
+    type: select
+    proxies:
+      - DIRECT
+      - HK01-HKT01
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
+      - HK-HKT01
+      - HK-HKT02
+      - TW-HiNet02
+      - US-LA03
+      - HK01
+      - LA01
+      - LA02
+      - HiNet01
+      - HK
+      - US
+      - JP
+      - TW
+      - SG
+rules:
+  - DOMAIN-SUFFIX,libtorrent.org,DIRECT
+  - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
+  - DOMAIN-SUFFIX,hanime1.me,LA01-LA03
+  - DOMAIN-SUFFIX,routinehub.co,HK01-HKT02
+  - DOMAIN-SUFFIX,v2ex.com,HK01-HKT02
+  - DOMAIN-SUFFIX,api.day.app,DIRECT
+  - DOMAIN-SUFFIX,sourceforge.net,LA01-LA03
+  - DOMAIN-SUFFIX,qbittorrent.org,HK01-HKT02
+  - DOMAIN-SUFFIX,daliansky.net,HK01-HKT02
+  - DOMAIN-SUFFIX,ehgt.org,LA01-LA03
+  - DOMAIN-SUFFIX,e-hentai.org,LA01-LA03
+  - DOMAIN-SUFFIX,exhentai.org,LA01-LA03
+  - DOMAIN-SUFFIX,ehwiki.org,LA01-LA03
+  - DOMAIN-SUFFIX,hentaiverse.org,LA01-LA03
+  - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+  - DOMAIN-SUFFIX,geetest.com,DIRECT
+  - RULE-SET,category-ai-!cn,AI-!CN
+  - RULE-SET,SpeedTest,SpeedTest
+  - RULE-SET,Icloud,Icloud
+  - RULE-SET,Apple,Apple
+  - RULE-SET,Apple_Domain,Apple
+  - RULE-SET,AppleDev,Apple
+  - RULE-SET,AppleID,Apple
+  - RULE-SET,Beats,Apple
+  - RULE-SET,SystemOTA,Apple
+  - RULE-SET,PayPal,PayPal
+  - RULE-SET,Game,Game
+  - RULE-SET,Pixiv,Pixiv
+  - RULE-SET,Duolingo,Duolingo
+  - RULE-SET,TikTok,TikTok
+  - RULE-SET,GoogleSearch,GoogleSearch
+  - RULE-SET,Twitter,Twitter
+  - RULE-SET,Instagram,Meta
+  - RULE-SET,Facebook,Meta
+  - RULE-SET,Whatsapp,Meta
+  - RULE-SET,Youtube,YouTube
+  - RULE-SET,YoutubeMusic,YouTube
+  - RULE-SET,Google,Alphabet
+  - RULE-SET,Chromecast,Alphabet
+  - RULE-SET,GoogleFCM,Alphabet
+  - RULE-SET,GoogleVoice,Alphabet
+  - RULE-SET,GitHub,GitHub
+  - RULE-SET,GitLab,GitHub
+  - RULE-SET,GitBook,GitHub
+  - RULE-SET,Bing,Bing
+  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,Amazon,Amazon
+  - RULE-SET,AmazonPrimeVideo,Amazon
+  - RULE-SET,PrimeVideo,Amazon
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,Twitch,Twitch
+  - RULE-SET,Bahamut,Bahamut
+  - RULE-SET,Wikipedia,Wiki
+  - RULE-SET,Wikimedia,Wiki
+  - RULE-SET,Reddit,Reddit
+  - RULE-SET,TeraBox,TeraBox
+  - RULE-SET,PikPak,PikPak
+  - RULE-SET,BiliBili,DIRECT
+  - RULE-SET,BiliBiliIntl,DIRECT
+  - RULE-SET,WeChat,DIRECT
+  - RULE-SET,Tencent,DIRECT
+  - GEOIP,CN,DIRECT
+  - GEOSITE,cn,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - MATCH,Final
