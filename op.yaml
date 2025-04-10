@@ -7,6 +7,7 @@ cfw-latency-timeout: 5000
 cfw-latency-url: http://www.google.com/generate_204
 clash-for-android:
   append-system-dns: false
+
 geodata-mode: true
 geodata-loader: memconservative
 geo-auto-update: true
@@ -16,6 +17,7 @@ geox-url:
   geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.db
   mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
   asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+
 dns:
   enable: true
   ipv6: false
@@ -122,13 +124,51 @@ dns:
       - +.googleapis.cn
       - +.googleapis.com
       - +.gvt1.com
+
 rule-providers:
+  # Direct指不应该被去广告分流规则屏蔽的域名、IP等，请将此分流规则置于去广告规则之前。
+  # Direct:
+  #   behavior: "classical"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml"
+  #   interval: 86400
+  #   path: ./rules/Direct.yaml
+  # Advertising:
+  #   behavior: "classical"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml"
+  #   interval: 86400
+  #   path: ./rules/Advertising.yaml
+  # Advertising_Domain:
+  #   behavior: "domain"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Domain.yaml"
+  #   interval: 86400
+  #   path: ./rules/Advertising_Domain.yaml
+  # AdvertisingLite:
+  #   behavior: "classical"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.yaml"
+  #   interval: 86400
+  #   path: ./rules/AdvertisingLite.yaml
+  # AdvertisingLite_Domain:
+  #   behavior: "domain"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Domain.yaml"
+  #   interval: 86400
+  #   path: ./rules/AdvertisingLite_Domain.yaml
   category-ai-!cn:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.yaml
     path: ./rules/category-ai-!cn.yaml
     interval: 86400
+  # OpenAI:
+  #   behavior: "classical"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
+  #   interval: 86400
+  #   path: ./rules/OpenAI.yaml
   SpeedTest:
     behavior: classical
     type: http
@@ -177,6 +217,18 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SystemOTA/SystemOTA.yaml
     interval: 86400
     path: ./rules/SystemOTA.yaml
+  # Steam:
+  #   behavior: "classical"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml"
+  #   interval: 86400
+  #   path: ./rules/Steam.yaml
+  # SteamCN:
+  #   behavior: "classical"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml"
+  #   interval: 86400
+  #   path: ./rules/SteamCN.yaml
   Game:
     behavior: classical
     type: http
@@ -357,6 +409,12 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LineTV/LineTV.yaml
     interval: 86400
     path: ./rules/LineTV.yaml
+  # LinkedIn:
+  #   behavior: "classical"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LinkedIn/LinkedIn_No_Resolve.yaml"
+  #   interval: 86400
+  #   path: ./rules/LinkedIn.yaml
   Twitch:
     behavior: classical
     type: http
@@ -441,12 +499,35 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.yaml
     interval: 86400
     path: ./rules/Tencent.yaml
+  # ChinaIPs:
+  #   behavior: "classical"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_Classical_No_IPv6.yaml"
+  #   interval: 86400
+  #   path: ./rules/ChinaIPs.yaml
+  # ChinaMax:
+  #   behavior: "classical"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.yaml"
+  #   interval: 86400
+  #   path: ./rules/ChinaMax.yaml
+  # ChinaMax_IP_No_IPv6:
+  #   behavior: "ipcidr"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_IP_No_IPv6.yaml"
+  #   interval: 86400
+  #   path: ./rules/ChinaMax_IP_No_IPv6.yaml
+  # ChinaMax_Domain:
+  #   behavior: "domain"
+  #   type: http
+  #   url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml"
+  #   interval: 86400
+  #   path: ./rules/ChinaMax_Domain.yaml
+
 proxies:
-  - {name: Resident, server: 185.130.105.109, port: 10000, type: socks5, username: 600e1890071cd8c7, password: RNW78Fm5}
-  - {name: OpenClash, server: 192.168.1.253, port: 12345, type: socks5}
-  - {name: Traffic Reset：17 Days Left, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🏳️‍🌈 Expire Date：2025/09/29, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇬🇧 7.55 GB | 200 GB, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  # - {name: Resident, server: 185.130.105.109, port: 10000, type: socks5, username: 600e1890071cd8c7, password: RNW78Fm5}
+  # - {name: OpenClash, server: 192.168.1.253, port: 12345, type: socks5}
+  
   - {name: 🇭🇰 Hong Kong 01, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇭🇰 Hong Kong 02, server: q9ohocwbd.nmmis.com, port: 15001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇭🇰 Hong Kong 03, server: q9ohocwbd.nmmis.com, port: 15004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
@@ -1149,6 +1230,12 @@ proxy-groups:
       - TW
       - SG
 rules:
+  # - RULE-SET,Direct,DIRECT
+  # - RULE-SET,Advertising,REJECT
+  # - RULE-SET,Advertising_Domain,REJECT
+  # - RULE-SET,AdvertisingLite,REJECT
+  # - RULE-SET,AdvertisingLite_Domain,REJECT
+  # - DOMAIN-SUFFIX,169278.xyz,DIRECT
   - DOMAIN-SUFFIX,libtorrent.org,DIRECT
   - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
   - DOMAIN-SUFFIX,hanime1.me,LA01-LA03
@@ -1156,16 +1243,24 @@ rules:
   - DOMAIN-SUFFIX,v2ex.com,HK01-HKT02
   - DOMAIN-SUFFIX,api.day.app,DIRECT
   - DOMAIN-SUFFIX,sourceforge.net,LA01-LA03
+  # - IP-CIDR,103.133.176.77/32,HK01
   - DOMAIN-SUFFIX,qbittorrent.org,HK01-HKT02
   - DOMAIN-SUFFIX,daliansky.net,HK01-HKT02
+  # ExHentai
   - DOMAIN-SUFFIX,ehgt.org,LA01-LA03
   - DOMAIN-SUFFIX,e-hentai.org,LA01-LA03
   - DOMAIN-SUFFIX,exhentai.org,LA01-LA03
   - DOMAIN-SUFFIX,ehwiki.org,LA01-LA03
   - DOMAIN-SUFFIX,hentaiverse.org,LA01-LA03
+  # AI
+  # - DOMAIN-SUFFIX,poe.com,AI
+  # - DOMAIN-SUFFIX,poecdn.net,AI
+  # sinaimg.cn是微博漏网之鱼
   - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+  # 极验GEETEST
   - DOMAIN-SUFFIX,geetest.com,DIRECT
   - RULE-SET,category-ai-!cn,AI-!CN
+  # - RULE-SET,OpenAI,AI
   - RULE-SET,SpeedTest,SpeedTest
   - RULE-SET,Icloud,Icloud
   - RULE-SET,Apple,Apple
@@ -1175,8 +1270,13 @@ rules:
   - RULE-SET,Beats,Apple
   - RULE-SET,SystemOTA,Apple
   - RULE-SET,PayPal,PayPal
+  # - RULE-SET,Steam,Steam
+  # - RULE-SET,SteamCN,Steam
   - RULE-SET,Game,Game
+  # - RULE-SET,Discord,Discord
+  # - RULE-SET,PayPal,PayPal
   - RULE-SET,Pixiv,Pixiv
+  # - RULE-SET,Pinterest,Pinterest
   - RULE-SET,Duolingo,Duolingo
   - RULE-SET,TikTok,TikTok
   - RULE-SET,GoogleSearch,GoogleSearch
@@ -1200,17 +1300,27 @@ rules:
   - RULE-SET,PrimeVideo,Amazon
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Telegram,Telegram
+  # - RULE-SET,Line,Line
+  # - RULE-SET,LineTV,Line
+  # - RULE-SET,LinkedIn,LinkedIn
   - RULE-SET,Twitch,Twitch
+  # - RULE-SET,Netflix,Netflix
+  # - RULE-SET,Disney+,Disney+
   - RULE-SET,Bahamut,Bahamut
   - RULE-SET,Wikipedia,Wiki
   - RULE-SET,Wikimedia,Wiki
   - RULE-SET,Reddit,Reddit
+  # - RULE-SET,ProtonMail,Proton
   - RULE-SET,TeraBox,TeraBox
   - RULE-SET,PikPak,PikPak
   - RULE-SET,BiliBili,DIRECT
   - RULE-SET,BiliBiliIntl,DIRECT
   - RULE-SET,WeChat,DIRECT
   - RULE-SET,Tencent,DIRECT
+  # - RULE-SET,ChinaIPs,DIRECT
+  # - RULE-SET,ChinaMax,DIRECT     
+  # - RULE-SET,ChinaMax_IP_No_IPv6,DIRECT
+  # - RULE-SET,ChinaMax_Domain,DIRECT
   - GEOIP,CN,DIRECT
   - GEOSITE,cn,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
@@ -1218,6 +1328,9 @@ rules:
   - IP-CIDR,172.16.0.0/12,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
+  # Apple的公网IPV4地址段
+  # - IP-CIDR,17.0.0.0/8,DIRECT
+  # 运营商保留内网地址段
   - IP-CIDR,100.64.0.0/10,DIRECT
   - IP-CIDR,224.0.0.0/4,DIRECT
   - MATCH,Final
