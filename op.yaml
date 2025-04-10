@@ -889,21 +889,21 @@ proxy-groups:
       - 🇸🇬 Singapore 03
       - 🇸🇬 Singapore 04
       - 🇸🇬 Singapore 05
-  - name: HK-HKT02
-    type: relay
-    proxies:
-      - HK
-      - HKT02
-  - name: TW-HiNet02
-    type: relay
-    proxies:
-      - TW
-      - HiNet02
-  - name: US-LA03
-    type: relay
-    proxies:
-      - US
-      - LA03
+  # - name: HK-HKT02
+  #   type: relay
+  #   proxies:
+  #     - HK
+  #     - HKT02
+  # - name: TW-HiNet02
+  #   type: relay
+  #   proxies:
+  #     - TW
+  #     - HiNet02
+  # - name: US-LA03
+  #   type: relay
+  #   proxies:
+  #     - US
+  #     - LA03
 rules:
   # - RULE-SET,Direct,DIRECT
   # - RULE-SET,Advertising,REJECT
