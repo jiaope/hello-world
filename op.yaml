@@ -748,6 +748,7 @@ proxy-groups:
       - LA01-LA03
       - JP
       - SG
+      - LA01
   - name: Duolingo
     type: select
     proxies:
