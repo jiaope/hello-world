@@ -583,7 +583,7 @@ proxies:
   # - {name: HKT01, server: hkt01.169278.xyz, port: 32811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZeZoEhyFbRs2wKVHeffeLw==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   # - {name: HKT02, server: hkt02.169278.xyz, port: 11301, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ynhW6gSU12tSRrbVQt9zaQ==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   # - {name: HiNet02, server: hinet.pai3.uk, port: 17699, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZU8OqQxBio6n/5PY43wDRw==:QxSosMYlgM0rOznNlA/cTw==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
-  # - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
+  - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   
 proxy-groups:
   - name: PayPal
@@ -749,6 +749,7 @@ proxy-groups:
       - JP
       - SG
       - LA01
+      - US-LA03
   - name: Duolingo
     type: select
     proxies:
@@ -900,11 +901,11 @@ proxy-groups:
   #   proxies:
   #     - TW
   #     - HiNet02
-  # - name: US-LA03
-  #   type: relay
-  #   proxies:
-  #     - US
-  #     - LA03
+  - name: US-LA03
+    type: relay
+    proxies:
+      - US
+      - LA03
 
 rules:
   # - RULE-SET,Direct,DIRECT
