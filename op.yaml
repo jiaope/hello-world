@@ -548,11 +548,11 @@ proxies:
   - {name: 🇯🇵 Japan 03, server: waj367fcn.nmmis.com, port: 17011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇯🇵 Japan 04, server: waj367fcn.nmmis.com, port: 17001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇯🇵 Japan 05, server: waj367fcn.nmmis.com, port: 17014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 01, server: waj367fcn.nmmis.com, port: 16007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 02, server: waj367fcn.nmmis.com, port: 16004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 03, server: waj367fcn.nmmis.com, port: 16011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 04, server: waj367fcn.nmmis.com, port: 16001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 05, server: waj367fcn.nmmis.com, port: 16014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  # - {name: 🇺🇸 United States 01, server: waj367fcn.nmmis.com, port: 16007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  # - {name: 🇺🇸 United States 02, server: waj367fcn.nmmis.com, port: 16004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  # - {name: 🇺🇸 United States 03, server: waj367fcn.nmmis.com, port: 16011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  # - {name: 🇺🇸 United States 04, server: waj367fcn.nmmis.com, port: 16001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
+  # - {name: 🇺🇸 United States 05, server: waj367fcn.nmmis.com, port: 16014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   # - {name: 🇨🇳 Taiwan 01, server: q9ohocwbd.nmmis.com, port: 19001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   # - {name: 🇨🇳 Taiwan 02, server: q9ohocwbd.nmmis.com, port: 19007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   # - {name: 🇨🇳 Taiwan 03, server: q9ohocwbd.nmmis.com, port: 19011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
@@ -570,7 +570,7 @@ proxies:
   # - {name: 🇮🇳 India 01, server: q9ohocwbd.nmmis.com, port: 27001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   # - {name: Türkiye 01, server: q9ohocwbd.nmmis.com, port: 28001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   
-  - {name: LA01, server: la01.169278.xyz, port: 443, type: vless, uuid: 14ef7c56-2cb0-43d4-9f9f-0b201d245a3c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: lB2sqYU1MIPXVJUuja9biHrtdIIX7KdUS17hIQnykWc, short-id: "16e1e76aabf7adb4" }, servername: 168000.xyz, client-fingerprint: chrome, udp: true}
+  # - {name: LA01, server: la01.169278.xyz, port: 443, type: vless, uuid: 14ef7c56-2cb0-43d4-9f9f-0b201d245a3c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: lB2sqYU1MIPXVJUuja9biHrtdIIX7KdUS17hIQnykWc, short-id: "16e1e76aabf7adb4" }, servername: 168000.xyz, client-fingerprint: chrome, udp: true}
   # - {name: LA02, server: 204.235.240.49, port: 30012, type: vless, uuid: aaa7d5b9-a6b8-4cdf-adf1-0977ea4340b4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Z9wfNTnMfXZT_XL9NUjmFakkFFN3atWIA8rzJJ2NlFY}, servername: aws.amazon.com, client-fingerprint: chrome, udp: true}
   # - {name: HiNet01, server: hinet.pai3.uk, port: 39113, type: vless, uuid: afce9e12-07a0-4aa1-87f6-4715555e21a2, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 8n5WXHWK61pKjeTfj_DHnUiF3hpC7theNZNMm-BbpgI, short-id: "68f3e3c532" }, servername: addons.mozilla.org, client-fingerprint: chrome, udp: true}
   # - {name: HK01, server: hk01.169278.xyz, port: 443, type: vless, uuid: 60d1233c-34a9-48ef-87f4-819f3e0650ee, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Qp-qbsQTqUUK9GgORDx8Ff4nT5ErxgFjoBZmrvVeMyY, short-id: "0027a7a4f00365c5" }, servername: 2akribis.com, client-fingerprint: chrome, udp: true}
@@ -583,7 +583,7 @@ proxies:
   # - {name: HKT01, server: hkt01.169278.xyz, port: 32811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZeZoEhyFbRs2wKVHeffeLw==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   # - {name: HKT02, server: hkt02.169278.xyz, port: 11301, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ynhW6gSU12tSRrbVQt9zaQ==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   # - {name: HiNet02, server: hinet.pai3.uk, port: 17699, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZU8OqQxBio6n/5PY43wDRw==:QxSosMYlgM0rOznNlA/cTw==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
-  - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
+  # - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   
 proxy-groups:
   - name: PayPal
@@ -748,8 +748,6 @@ proxy-groups:
       - LA01-LA03
       - JP
       - SG
-      - LA01
-      - US-LA03
   - name: Duolingo
     type: select
     proxies:
@@ -847,17 +845,17 @@ proxy-groups:
   #     - 🇭🇰 Hong Kong 08
   #     - 🇭🇰 Hong Kong 09
   #     - 🇭🇰 Hong Kong 10
-  - name: US
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇺🇸 United States 01
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03
-      - 🇺🇸 United States 04
-      - 🇺🇸 United States 05
+  # - name: US
+  #   type: url-test
+  #   url: http://www.google.com/generate_204
+  #   interval: 1800
+  #   tolerance: 100
+  #   proxies:
+  #     - 🇺🇸 United States 01
+  #     - 🇺🇸 United States 02
+  #     - 🇺🇸 United States 03
+  #     - 🇺🇸 United States 04
+  #     - 🇺🇸 United States 05
   - name: JP
     type: url-test
     url: http://www.google.com/generate_204
@@ -901,11 +899,11 @@ proxy-groups:
   #   proxies:
   #     - TW
   #     - HiNet02
-  - name: US-LA03
-    type: relay
-    proxies:
-      - US
-      - LA03
+  # - name: US-LA03
+  #   type: relay
+  #   proxies:
+  #     - US
+  #     - LA03
 
 rules:
   # - RULE-SET,Direct,DIRECT
