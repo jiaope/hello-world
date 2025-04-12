@@ -847,17 +847,17 @@ proxy-groups:
   #     - 🇭🇰 Hong Kong 08
   #     - 🇭🇰 Hong Kong 09
   #     - 🇭🇰 Hong Kong 10
-  # - name: US
-  #   type: url-test
-  #   url: http://www.google.com/generate_204
-  #   interval: 1800
-  #   tolerance: 100
-  #   proxies:
-  #     - 🇺🇸 United States 01
-  #     - 🇺🇸 United States 02
-  #     - 🇺🇸 United States 03
-  #     - 🇺🇸 United States 04
-  #     - 🇺🇸 United States 05
+  - name: US
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 1800
+    tolerance: 100
+    proxies:
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
   - name: JP
     type: url-test
     url: http://www.google.com/generate_204
