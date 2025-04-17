@@ -137,16 +137,6 @@ rule-providers:
 proxies:
   # - {name: iPhone13PM, server: 172.16.80.24, port: 10214, type: socks5, udp: true}
   
-  - {name: 🇭🇰 Hong Kong 01, server: q9ohocwbd.nmmis.com, port: 15017, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇭🇰 Hong Kong 02, server: q9ohocwbd.nmmis.com, port: 15001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇭🇰 Hong Kong 03, server: q9ohocwbd.nmmis.com, port: 15004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇭🇰 Hong Kong 04, server: q9ohocwbd.nmmis.com, port: 15031, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇭🇰 Hong Kong 05, server: q9ohocwbd.nmmis.com, port: 15027, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇭🇰 Hong Kong 06, server: q9ohocwbd.nmmis.com, port: 15021, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇭🇰 Hong Kong 07, server: q9ohocwbd.nmmis.com, port: 15024, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇭🇰 Hong Kong 08, server: q9ohocwbd.nmmis.com, port: 15011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇭🇰 Hong Kong 09, server: q9ohocwbd.nmmis.com, port: 15014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇭🇰 Hong Kong 10, server: q9ohocwbd.nmmis.com, port: 15007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇸🇬 Singapore 01, server: q9ohocwbd.nmmis.com, port: 18811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇸🇬 Singapore 02, server: q9ohocwbd.nmmis.com, port: 18801, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇸🇬 Singapore 03, server: q9ohocwbd.nmmis.com, port: 18804, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
@@ -157,11 +147,6 @@ proxies:
   - {name: 🇯🇵 Japan 03, server: waj367fcn.nmmis.com, port: 17011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇯🇵 Japan 04, server: waj367fcn.nmmis.com, port: 17001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇯🇵 Japan 05, server: waj367fcn.nmmis.com, port: 17014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 01, server: waj367fcn.nmmis.com, port: 16007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 02, server: waj367fcn.nmmis.com, port: 16004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 03, server: waj367fcn.nmmis.com, port: 16011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 04, server: waj367fcn.nmmis.com, port: 16001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
-  - {name: 🇺🇸 United States 05, server: waj367fcn.nmmis.com, port: 16014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇨🇳 Taiwan 01, server: q9ohocwbd.nmmis.com, port: 19001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇨🇳 Taiwan 02, server: q9ohocwbd.nmmis.com, port: 19007, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇨🇳 Taiwan 03, server: q9ohocwbd.nmmis.com, port: 19011, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
@@ -179,68 +164,57 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - HK-HKT02
-      - TW-HiNet02
-      - US-LA03
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
       - JP
       - SG
+      - TW
       - 俄罗斯CN2-rl
   - name: Acer
     type: select
     proxies:
       - DIRECT
-      - HK-HKT02
-      - TW-HiNet02
-      - US-LA03
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
       - JP
       - SG
+      - TW
       - 俄罗斯CN2-rl
   - name: SpeedTest
     type: select
     proxies:
       - DIRECT
-      - HK-HKT02
-      - TW-HiNet02
-      - US-LA03
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
       - JP
       - SG
+      - TW
       - 俄罗斯CN2-rl
   - name: IPInfo
     type: select
     proxies:
       - DIRECT
-      - HK-HKT02
-      - TW-HiNet02
-      - US-LA03
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
       - JP
       - SG
+      - TW
       - 俄罗斯CN2-rl
   - name: Final
     type: select
     proxies:
       - DIRECT
-      - HK-HKT02
-      - TW-HiNet02
-      - US-LA03
+      - HK01-HKT02
+      - HK01-HiNet01
+      - LA01-LA03
       - JP
       - SG
+      - TW
       - 俄罗斯CN2-rl
-  - name: HK
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇭🇰 Hong Kong 01
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇰 Hong Kong 03
-      - 🇭🇰 Hong Kong 04
-      - 🇭🇰 Hong Kong 05
-      - 🇭🇰 Hong Kong 06
-      - 🇭🇰 Hong Kong 07
-      - 🇭🇰 Hong Kong 08
-      - 🇭🇰 Hong Kong 09
-      - 🇭🇰 Hong Kong 10
   - name: JP
     type: url-test
     url: http://www.google.com/generate_204
@@ -263,17 +237,6 @@ proxy-groups:
       - 🇸🇬 Singapore 03
       - 🇸🇬 Singapore 04
       - 🇸🇬 Singapore 05
-  - name: US
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 1800
-    tolerance: 100
-    proxies:
-      - 🇺🇸 United States 01
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03
-      - 🇺🇸 United States 04
-      - 🇺🇸 United States 05
   - name: TW
     type: url-test
     url: http://www.google.com/generate_204
