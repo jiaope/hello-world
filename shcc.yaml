@@ -250,7 +250,7 @@ proxy-groups:
       - 🇨🇳 Taiwan 05
 rules:
   - RULE-SET,category-ai-!cn,AI-!CN
-  - DOMAIN-SUFFIX,us.chat.169278.xyz,LA01-LA03
+  - DOMAIN-SUFFIX,us.chat.169278.xyz,DIRECT
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
   - DOMAIN-SUFFIX,acervcon.com,Acer
   - DOMAIN-SUFFIX,amazonaws.com,Acer
