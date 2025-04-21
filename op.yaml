@@ -936,6 +936,7 @@ rules:
   # 极验GEETEST
   - DOMAIN-SUFFIX,geetest.com,DIRECT
   - RULE-SET,category-ai-!cn,AI-!CN
+  - DOMAIN-SUFFIX,us.chat.169278.xyz,DIRECT
   # - RULE-SET,OpenAI,AI
   - RULE-SET,SpeedTest,SpeedTest
   - RULE-SET,Icloud,Icloud
