@@ -592,7 +592,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Game
@@ -601,7 +601,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: AI-!CN
@@ -610,7 +610,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: GoogleSearch
@@ -619,7 +619,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Twitter
@@ -628,7 +628,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Meta
@@ -637,7 +637,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: YouTube
@@ -646,7 +646,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Alphabet
@@ -655,7 +655,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: GitHub
@@ -664,7 +664,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Bing
@@ -673,7 +673,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Microsoft
@@ -682,7 +682,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Amazon
@@ -691,7 +691,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Spotify
@@ -700,7 +700,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Telegram
@@ -709,7 +709,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Wiki
@@ -718,7 +718,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Reddit
@@ -727,7 +727,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Pixiv
@@ -736,7 +736,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Final
@@ -745,7 +745,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Duolingo
@@ -754,7 +754,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: TikTok
@@ -763,7 +763,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Twitch
@@ -772,7 +772,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Bahamut
@@ -781,7 +781,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: TeraBox
@@ -790,7 +790,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: PikPak
@@ -799,7 +799,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: SpeedTest
@@ -808,7 +808,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Icloud
@@ -817,7 +817,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   - name: Apple
@@ -826,7 +826,7 @@ proxy-groups:
       - DIRECT
       - HK01-HKT02
       - HK01-HiNet01
-      - LA01-LA03
+      - BWH-ZGO
       - JP
       - SG
   # - name: HK
@@ -914,20 +914,20 @@ rules:
   # - DOMAIN-SUFFIX,169278.xyz,DIRECT
   - DOMAIN-SUFFIX,libtorrent.org,DIRECT
   - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
-  - DOMAIN-SUFFIX,hanime1.me,LA01-LA03
+  - DOMAIN-SUFFIX,hanime1.me,BWH-ZGO
   - DOMAIN-SUFFIX,routinehub.co,HK01-HKT02
   - DOMAIN-SUFFIX,v2ex.com,HK01-HKT02
   - DOMAIN-SUFFIX,api.day.app,DIRECT
-  - DOMAIN-SUFFIX,sourceforge.net,LA01-LA03
+  - DOMAIN-SUFFIX,sourceforge.net,BWH-ZGO
   # - IP-CIDR,103.133.176.77/32,HK01
   - DOMAIN-SUFFIX,qbittorrent.org,HK01-HKT02
   - DOMAIN-SUFFIX,daliansky.net,HK01-HKT02
   # ExHentai
-  - DOMAIN-SUFFIX,ehgt.org,LA01-LA03
-  - DOMAIN-SUFFIX,e-hentai.org,LA01-LA03
-  - DOMAIN-SUFFIX,exhentai.org,LA01-LA03
-  - DOMAIN-SUFFIX,ehwiki.org,LA01-LA03
-  - DOMAIN-SUFFIX,hentaiverse.org,LA01-LA03
+  - DOMAIN-SUFFIX,ehgt.org,BWH-ZGO
+  - DOMAIN-SUFFIX,e-hentai.org,BWH-ZGO
+  - DOMAIN-SUFFIX,exhentai.org,BWH-ZGO
+  - DOMAIN-SUFFIX,ehwiki.org,BWH-ZGO
+  - DOMAIN-SUFFIX,hentaiverse.org,BWH-ZGO
   # AI
   # - DOMAIN-SUFFIX,poe.com,AI
   # - DOMAIN-SUFFIX,poecdn.net,AI
