@@ -632,7 +632,6 @@ proxy-groups:
       - JP
       - SG
       - TW
-      - 
   - name: YouTube
     type: select
     proxies:
@@ -908,13 +907,13 @@ rules:
   - DOMAIN-SUFFIX,libtorrent.org,DIRECT
   - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
   - DOMAIN-SUFFIX,hanime1.me,BWH-ZGO
-  - DOMAIN-SUFFIX,routinehub.co,HK01-HKT02
-  - DOMAIN-SUFFIX,v2ex.com,HK01-HKT02
+  - DOMAIN-SUFFIX,routinehub.co,YxVM-Suda
+  - DOMAIN-SUFFIX,v2ex.com,YxVM-Suda
   - DOMAIN-SUFFIX,api.day.app,DIRECT
   - DOMAIN-SUFFIX,sourceforge.net,BWH-ZGO
   # - IP-CIDR,103.133.176.77/32,HK01
-  - DOMAIN-SUFFIX,qbittorrent.org,HK01-HKT02
-  - DOMAIN-SUFFIX,daliansky.net,HK01-HKT02
+  - DOMAIN-SUFFIX,qbittorrent.org,YxVM-Suda
+  - DOMAIN-SUFFIX,daliansky.net,YxVM-Suda
   # ExHentai
   - DOMAIN-SUFFIX,ehgt.org,BWH-ZGO
   - DOMAIN-SUFFIX,e-hentai.org,BWH-ZGO
