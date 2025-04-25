@@ -593,6 +593,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Game
     type: select
     proxies:
@@ -601,6 +602,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: AI-!CN
     type: select
     proxies:
@@ -609,6 +611,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: GoogleSearch
     type: select
     proxies:
@@ -617,6 +620,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Twitter
     type: select
     proxies:
@@ -625,6 +629,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Meta
     type: select
     proxies:
@@ -633,6 +638,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
       - 
   - name: YouTube
     type: select
@@ -642,6 +648,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Alphabet
     type: select
     proxies:
@@ -650,6 +657,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: GitHub
     type: select
     proxies:
@@ -658,6 +666,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Bing
     type: select
     proxies:
@@ -666,6 +675,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Microsoft
     type: select
     proxies:
@@ -674,6 +684,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Amazon
     type: select
     proxies:
@@ -682,6 +693,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Spotify
     type: select
     proxies:
@@ -690,6 +702,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Telegram
     type: select
     proxies:
@@ -698,6 +711,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Wiki
     type: select
     proxies:
@@ -706,6 +720,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Reddit
     type: select
     proxies:
@@ -714,6 +729,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Pixiv
     type: select
     proxies:
@@ -722,6 +738,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Final
     type: select
     proxies:
@@ -730,6 +747,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Duolingo
     type: select
     proxies:
@@ -738,6 +756,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: TikTok
     type: select
     proxies:
@@ -746,6 +765,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Twitch
     type: select
     proxies:
@@ -754,6 +774,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Bahamut
     type: select
     proxies:
@@ -762,6 +783,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: TeraBox
     type: select
     proxies:
@@ -770,6 +792,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: PikPak
     type: select
     proxies:
@@ -778,6 +801,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: SpeedTest
     type: select
     proxies:
@@ -786,6 +810,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Icloud
     type: select
     proxies:
@@ -794,6 +819,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   - name: Apple
     type: select
     proxies:
@@ -802,6 +828,7 @@ proxy-groups:
       - BWH-ZGO
       - JP
       - SG
+      - TW
   # - name: HK
   #   type: url-test
   #   url: http://www.google.com/generate_204
