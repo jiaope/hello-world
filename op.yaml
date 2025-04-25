@@ -579,9 +579,7 @@ proxies:
   - {name: YxVM-Suda, server: hk01.169278.xyz, port: 443, type: vless, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: "a4af0bce7a176894" }, servername: 2akribis.com, client-fingerprint: chrome, udp: true}
   - {name: BWH-ZGO, server: la01.169278.xyz, port: 443, type: vless, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: "e6ef20d45d410596" }, servername: 168000.xyz, client-fingerprint: chrome, udp: true}
 
-  # - {name: HKT01, server: hkt01.169278.xyz, port: 32811, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZeZoEhyFbRs2wKVHeffeLw==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   # - {name: HKT02, server: hkt02.169278.xyz, port: 11301, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ynhW6gSU12tSRrbVQt9zaQ==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
-  # - {name: HiNet02, server: hinet.pai3.uk, port: 17699, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ZU8OqQxBio6n/5PY43wDRw==:QxSosMYlgM0rOznNlA/cTw==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   # - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   
 proxy-groups:
