@@ -261,6 +261,7 @@ rules:
   - DOMAIN-SUFFIX,api.day.app,DIRECT
 #  - IP-CIDR,103.133.176.77/32,HK
   - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+  - GEOIP,google,BWH-ZGO
   - GEOSITE,google,BWH-ZGO
   - GEOIP,CN,DIRECT
   - GEOSITE,cn,DIRECT
