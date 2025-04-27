@@ -571,8 +571,8 @@ proxies:
   # - {name: Türkiye 01, server: q9ohocwbd.nmmis.com, port: 28001, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   
   # - {name: HK01-HKT01, server: hk01.169278.xyz, port: 22605, type: vless, uuid: 31d6ade0-7bfb-4329-a499-727ddc43830c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 7LRiRuepWG2MQm1LwfGFEzYuGZ6VsmWqVdAXvp4JFWU, short-id: "d1e4929ccaf812f1" }, servername: 2akribis.com, client-fingerprint: chrome, udp: true}
-  - {name: YxVM-Suda, server: hk01.169278.xyz, port: 443, type: vless, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: "a4af0bce7a176894" }, servername: 2akribis.com, client-fingerprint: chrome, udp: true}
-  - {name: BWH-ZGO, server: la01.169278.xyz, port: 443, type: vless, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: "e6ef20d45d410596" }, servername: 168000.xyz, client-fingerprint: chrome, udp: true}
+  - {name: YxVM-Suda, server: hk01.169278.xyz, port: 443, type: vless, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: "a4af0bce7a176894" }, servername: 2akribis.com, client-fingerprint: chrome, udp: true, packet-encoding: xudp}
+  - {name: BWH-ZGO, server: la01.169278.xyz, port: 443, type: vless, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: "e6ef20d45d410596" }, servername: 168000.xyz, client-fingerprint: chrome, udp: true, packet-encoding: xudp}
 
   # - {name: HKT02, server: hkt02.169278.xyz, port: 11301, type: ss, cipher: 2022-blake3-aes-128-gcm, password: ynhW6gSU12tSRrbVQt9zaQ==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   # - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
@@ -898,6 +898,7 @@ proxy-groups:
   #     - LA03
 
 rules:
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
   # - RULE-SET,Direct,DIRECT
   # - RULE-SET,Advertising,REJECT
   # - RULE-SET,Advertising_Domain,REJECT
