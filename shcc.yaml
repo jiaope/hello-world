@@ -154,8 +154,8 @@ proxies:
   - {name: 🇨🇳 Taiwan 04, server: q9ohocwbd.nmmis.com, port: 19004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
   - {name: 🇨🇳 Taiwan 05, server: q9ohocwbd.nmmis.com, port: 19014, type: ss, cipher: 2022-blake3-aes-128-gcm, password: aLBxsnzSc2Gb8Q72O0HHhw==:eSUrY0o6m4MVfGwyTi+CCw==, udp: true}
 
-  - {name: YxVM, server: hk01.169278.xyz, port: 443, type: vless, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: "8d5ee8fe74918fbb" }, servername: 2akribis.com, client-fingerprint: chrome, udp: true, packet-encoding: xudp}
-  - {name: BWH, server: la01.169278.xyz, port: 443, type: vless, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: "f5a8832d7140aab5" }, servername: 168000.xyz, client-fingerprint: chrome, udp: true, packet-encoding: xudp}
+  - {name: HK(YxVM), server: hk01.169278.xyz, port: 443, type: vless, uuid: 9824a042-780f-4575-a8b8-60a7fdb34093, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QYhzOqglgEjKT34dSrZy_TCqcJ2BMPTsRHfdhJCIzTM, short-id: "8d5ee8fe74918fbb" }, servername: 2akribis.com, client-fingerprint: chrome, udp: true, packet-encoding: xudp}
+  - {name: US(BWH), server: la01.169278.xyz, port: 443, type: vless, uuid: 657350ff-dd6c-4b0e-bd22-7658c3386803, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: idV-TnD_K7hURwP0hIk6yhcQ0ODLgOrerRhLYKh4pBo, short-id: "f5a8832d7140aab5" }, servername: 168000.xyz, client-fingerprint: chrome, udp: true, packet-encoding: xudp}
   
   - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: "24b05fcf3723e6af" } }
 
@@ -164,8 +164,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - YxVM
-      - BWH
+      - HK(YxVM)
+      - US(BWH)
       - JP
       - SG
       - TW
@@ -174,8 +174,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - YxVM
-      - BWH
+      - HK(YxVM)
+      - US(BWH)
       - JP
       - SG
       - TW
@@ -184,8 +184,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - YxVM
-      - BWH
+      - HK(YxVM)
+      - US(BWH)
       - JP
       - SG
       - TW
@@ -194,8 +194,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - YxVM
-      - BWH
+      - HK(YxVM)
+      - US(BWH)
       - JP
       - SG
       - TW
@@ -204,8 +204,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - YxVM
-      - BWH
+      - HK(YxVM)
+      - US(BWH)
       - JP
       - SG
       - TW
@@ -262,8 +262,8 @@ rules:
   - DOMAIN-SUFFIX,api.day.app,DIRECT
 #  - IP-CIDR,103.133.176.77/32,HK
   - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
-  - GEOIP,google,BWH
-  - GEOSITE,google,BWH
+  - GEOIP,google,US(BWH)
+  - GEOSITE,google,US(BWH)
   - GEOIP,CN,DIRECT
   - GEOSITE,cn,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
