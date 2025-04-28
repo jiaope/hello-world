@@ -651,6 +651,15 @@ proxy-groups:
       - JP
       - SG
       - TW
+  - name: Pinterest
+    type: select
+    proxies:
+      - DIRECT
+      - YxVM
+      - BWH
+      - JP
+      - SG
+      - TW
   - name: Duolingo
     type: select
     proxies:
@@ -1000,7 +1009,7 @@ rules:
   - RULE-SET,Game,Game
   - RULE-SET,Discord,Discord
   - RULE-SET,Pixiv,Pixiv
-  # - RULE-SET,Pinterest,Pinterest
+  - RULE-SET,Pinterest,Pinterest
   - RULE-SET,Duolingo,Duolingo
   - RULE-SET,TikTok,TikTok
   - RULE-SET,GoogleSearch,GoogleSearch
