@@ -164,7 +164,7 @@ proxies:
   - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: "24b05fcf3723e6af" } }
 
 proxy-groups:
-  - name: DNS
+  - name: DNSProxy
     type: select
     proxies:
       - DIRECT
@@ -259,9 +259,9 @@ proxy-groups:
       - 🇨🇳 Taiwan 05
 rules:
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
-  - DOMAIN-SUFFIX,dns.rubyfish.cn,DNS
-  - DOMAIN-SUFFIX,public.dns.iij.jp,DNS
-  - IP-CIDR,8.8.4.4/32,DNS
+  - DOMAIN-SUFFIX,dns.rubyfish.cn,DNSProxy
+  - DOMAIN-SUFFIX,public.dns.iij.jp,DNSProxy
+  - IP-CIDR,8.8.4.4/32,DNSProxy
   - RULE-SET,category-ai-!cn,AI-!CN
   - DOMAIN-SUFFIX,us.chat.169278.xyz,DIRECT
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
