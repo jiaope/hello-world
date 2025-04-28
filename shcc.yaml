@@ -258,9 +258,8 @@ proxy-groups:
       - 🇨🇳 Taiwan 05
 rules:
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
-  - DOMAIN-SUFFIX,dns.rubyfish.cn,DNSProxy
-  - DOMAIN-SUFFIX,public.dns.iij.jp,DNSProxy
-  - IP-CIDR,8.8.4.4/32,DNSProxy
+  - DOMAIN,dns.google,DNSProxy
+  - IP-CIDR,1.1.1.1/32,DNSProxy
   - RULE-SET,category-ai-!cn,AI-!CN
   - DOMAIN-SUFFIX,us.chat.169278.xyz,DIRECT
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
