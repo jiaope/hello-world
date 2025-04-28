@@ -102,12 +102,15 @@ dns:
     - speedtest.cros.wr.pvp.net
   nameserver:
     - https://223.6.6.6/dns-query
-    - https://rubyfish.cn/dns-query
-    - https://dns.pub/dns-query
+    - https://doh.pub/dns-query
   fallback:
-    - https://dns.rubyfish.cn/dns-query
-    - https://public.dns.iij.jp/dns-query
-    - tls://8.8.4.4
+    - https://1.1.1.1/dns-query
+    - https://dns.google/dns-query
+    # - tls://8.8.4.4
+  respect-rules: true
+  proxy-server-nameserver:
+    - https://223.6.6.6/dns-query
+    - https://doh.pub/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -579,6 +582,15 @@ proxies:
   # - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   
 proxy-groups:
+  - name: DNSProxy
+    type: select
+    proxies:
+      - DIRECT
+      - HK(YxVM)
+      - US(BWH)
+      - JP
+      - SG
+      - TW
   - name: AI-!CN
     type: select
     proxies:
@@ -963,6 +975,8 @@ proxy-groups:
 
 rules:
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
+  - DOMAIN,dns.google,DNSProxy
+  - IP-CIDR,1.1.1.1/32,DNSProxy
   # - RULE-SET,Direct,DIRECT
   # - RULE-SET,Advertising,REJECT
   # - RULE-SET,Advertising_Domain,REJECT
