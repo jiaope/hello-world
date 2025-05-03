@@ -1012,7 +1012,6 @@ rules:
   - DOMAIN-SUFFIX,us.chat.169278.xyz,DIRECT
   # - RULE-SET,OpenAI,AI
   - RULE-SET,SpeedTest,SpeedTest
-  - DOMAIN-SUFFIX,cdn-apple.com,Apple
   - RULE-SET,Icloud,Icloud
   - RULE-SET,Apple,Apple
   - RULE-SET,Apple_Domain,Apple
