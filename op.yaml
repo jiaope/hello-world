@@ -1013,6 +1013,7 @@ rules:
   # - RULE-SET,OpenAI,AI
   - RULE-SET,SpeedTest,SpeedTest
   - RULE-SET,Icloud,Icloud
+  - DOMAIN-SUFFIX,cdn-apple.com,Apple
   - RULE-SET,Apple,Apple
   - RULE-SET,Apple_Domain,Apple
   - RULE-SET,AppleDev,Apple
