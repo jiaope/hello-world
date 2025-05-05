@@ -26,10 +26,10 @@ dns:
   ipv6: false
   listen: 0.0.0.0:53
   # default-nameserver:
-    # - https://223.5.5.5/dns-query
-    # - https://1.12.12.12/dns-query
-    # - 223.5.5.5
-    # - 119.29.29.29
+  #   # - https://223.5.5.5/dns-query
+  #   # - https://1.12.12.12/dns-query
+  #   - 223.5.5.5
+  #   - 119.29.29.29
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
@@ -104,19 +104,19 @@ dns:
     - "*.ipv6.microsoft.com"
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
-  nameserver:
-    - https://1.0.0.1/dns-query
-    - https://8.8.4.4/dns-query
+  # nameserver:
+  #   - https://1.0.0.1/dns-query
+  #   - https://8.8.4.4/dns-query
   # fallback:
-    # - https://1.1.1.1/dns-query
-    # - https://dns.google/dns-query
-    # - tls://8.8.4.4
+  #   - https://1.1.1.1/dns-query
+  #   - https://dns.google/dns-query
+  #   - tls://8.8.4.4
   nameserver-policy:
     "geosite:cn":
        - system
        - 223.5.5.5
        - 119.29.29.29
-  respect-rules: true
+  # respect-rules: true
   proxy-server-nameserver:
     - 208.67.222.222
   # fallback-filter:
@@ -560,15 +560,15 @@ proxies:
   # - {name: LA03, server: la02.169278.xyz, port: 51218, type: ss, cipher: 2022-blake3-aes-128-gcm, password: RVQG1Pho93O1eiV1V+KwHg==, udp: true, udp-over-tcp: true, udp-over-tcp-version: 2}
   
 proxy-groups:
-  - name: DNSProxy
-    type: select
-    proxies:
-      - DIRECT
-      - HK(YxVM)
-      - US(BWH)
-      - JP
-      - SG
-      - TW
+  # - name: DNSProxy
+  #   type: select
+  #   proxies:
+  #     - DIRECT
+  #     - HK(YxVM)
+  #     - US(BWH)
+  #     - JP
+  #     - SG
+  #     - TW
   - name: AI-!CN
     type: select
     proxies:
@@ -953,8 +953,8 @@ proxy-groups:
 
 rules:
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
-  - IP-CIDR,1.0.0.1/32,DNSProxy,no-resolve
-  - IP-CIDR,8.8.4.4/32,DNSProxy,no-resolve
+  # - IP-CIDR,1.0.0.1/32,DNSProxy,no-resolve
+  # - IP-CIDR,8.8.4.4/32,DNSProxy,no-resolve
   # - RULE-SET,Direct,DIRECT
   # - RULE-SET,Advertising,REJECT
   # - RULE-SET,AdvertisingLite,REJECT
