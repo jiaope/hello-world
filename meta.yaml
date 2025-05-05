@@ -418,7 +418,7 @@ rule-providers:
   Netflix:
     behavior: "classical"
     type: http
-    url: "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix_Classical_No_Resolve..yaml"
+    url: "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix_Classical_No_Resolve.yaml"
     interval: 86400
     path: ./rules/Netflix_Classical_No_Resolve..yaml
   Disney+:
