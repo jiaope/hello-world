@@ -3,10 +3,10 @@ allow-lan: true
 mode: Rule
 log-level: info
 ipv6: false
-cfw-latency-timeout: 5000
-cfw-latency-url: http://www.google.com/generate_204
-clash-for-android:
-  append-system-dns: false
+# cfw-latency-timeout: 5000
+# cfw-latency-url: http://www.google.com/generate_204
+# clash-for-android:
+#   append-system-dns: false
   
 # geodata-mode: true 
 # geodata-loader: memconservative
@@ -22,10 +22,10 @@ dns:
   enable: true
   cache-algorithm: arc
   ipv6: false
-  listen: 127.0.0.1:8853
-  default-nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
+  listen: 0.0.0.0:53
+  # default-nameserver:
+  #   - 119.29.29.29
+  #   - 223.5.5.5
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -101,34 +101,38 @@ dns:
     - "*.ipv6.microsoft.com"
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
-  nameserver:
-    - https://223.6.6.6/dns-query
-    - https://doh.pub/dns-query
-  fallback:
-    - https://1.1.1.1/dns-query
-    - https://dns.google/dns-query
-    # - tls://8.8.4.4
-  respect-rules: true
+  # nameserver:
+  #   - https://223.6.6.6/dns-query
+  #   - https://doh.pub/dns-query
+  # fallback:
+  #   - https://1.1.1.1/dns-query
+  #   - https://dns.google/dns-query
+  #   # - tls://8.8.4.4
+  nameserver-policy:
+    "geosite:cn":
+       - system
+       - 223.5.5.5
+       - 119.29.29.29
+  # respect-rules: true
   proxy-server-nameserver:
-    - https://223.6.6.6/dns-query
-    - https://doh.pub/dns-query
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
-      - 127.0.0.1/32
-    domain:
-      - +.google.com
-      - +.facebook.com
-      - +.twitter.com
-      - +.youtube.com
-      - +.xn--ngstr-lra8j.com
-      - +.google.cn
-      - +.googleapis.cn
-      - +.googleapis.com
-      - +.gvt1.com
+    - 208.67.222.222
+  # fallback-filter:
+  #   geoip: true
+  #   geoip-code: CN
+  #   ipcidr:
+  #     - 240.0.0.0/4
+  #     - 0.0.0.0/32
+  #     - 127.0.0.1/32
+  #   domain:
+  #     - +.google.com
+  #     - +.facebook.com
+  #     - +.twitter.com
+  #     - +.youtube.com
+  #     - +.xn--ngstr-lra8j.com
+  #     - +.google.cn
+  #     - +.googleapis.cn
+  #     - +.googleapis.com
+  #     - +.gvt1.com
 
 rule-providers:
   category-ai-!cn:
@@ -163,16 +167,16 @@ proxies:
   - {name: 俄罗斯CN2-rl, type: vless, server: 45.130.147.121, port: 52012, uuid: f42f2abf-1b70-4014-992e-91434a485771, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: a9uk_ZJLsVC_MY4CIa-d1aP5bagweyHUPR6O932-dC8, short-id: "24b05fcf3723e6af" } }
 
 proxy-groups:
-  - name: DNSProxy
-    type: select
-    proxies:
-      - DIRECT
-      - HK(YxVM)
-      - US(BWH)
-      - JP
-      - SG
-      - TW
-      - 俄罗斯CN2-rl
+  # - name: DNSProxy
+  #   type: select
+  #   proxies:
+  #     - DIRECT
+  #     - HK(YxVM)
+  #     - US(BWH)
+  #     - JP
+  #     - SG
+  #     - TW
+  #     - 俄罗斯CN2-rl
   - name: AI-!CN
     type: select
     proxies:
@@ -258,8 +262,8 @@ proxy-groups:
       - 🇨🇳 Taiwan 05
 rules:
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
-  - DOMAIN,dns.google,DNSProxy
-  - IP-CIDR,1.1.1.1/32,DNSProxy
+  # - DOMAIN,dns.google,DNSProxy
+  # - IP-CIDR,1.1.1.1/32,DNSProxy
   - RULE-SET,category-ai-!cn,AI-!CN
   - DOMAIN-SUFFIX,us.chat.169278.xyz,DIRECT
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
@@ -275,17 +279,17 @@ rules:
   - DOMAIN-SUFFIX,speed.dler.io,SpeedTest
   - DOMAIN-KEYWORD,speedtest,SpeedTest
   - DOMAIN-SUFFIX,api.day.app,DIRECT
-#  - IP-CIDR,103.133.176.77/32,HK
+#  - IP-CIDR,103.133.176.77/32,HK,no-resolve
   - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
-  - GEOIP,google,US(BWH)
+  - GEOIP,google,US(BWH),no-resolve
   - GEOSITE,google,US(BWH)
-  - GEOIP,CN,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
   - GEOSITE,cn,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
-  - IP-CIDR,192.168.0.0/16,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,100.64.0.0/10,DIRECT
-  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
   - MATCH,Final
