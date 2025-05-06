@@ -101,10 +101,13 @@ dns:
     - "*.ipv6.microsoft.com"
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
-  # nameserver:
-  #   - https://223.6.6.6/dns-query
-  #   - https://doh.pub/dns-query
-  # fallback:
+  nameserver:
+    # - https://223.6.6.6/dns-query
+    # - https://doh.pub/dns-query
+    - https://1.0.0.1/dns-query
+    - https://8.8.4.4/dns-query
+  fallback:
+    []
   #   - https://1.1.1.1/dns-query
   #   - https://dns.google/dns-query
   #   # - tls://8.8.4.4
@@ -262,8 +265,8 @@ proxy-groups:
       - 🇨🇳 Taiwan 05
 rules:
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
-  # - DOMAIN,dns.google,DNSProxy
-  # - IP-CIDR,1.1.1.1/32,DNSProxy
+  # - IP-CIDR,1.0.0.1/32,DNSProxy,no-resolve
+  # - IP-CIDR,8.8.4.4/32,DNSProxy,no-resolve
   - RULE-SET,category-ai-!cn,AI-!CN
   - DOMAIN-SUFFIX,us.chat.169278.xyz,DIRECT
   - DOMAIN-SUFFIX,ipinfo.io,IPInfo
